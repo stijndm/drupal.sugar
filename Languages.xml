@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+
+  <language id="be.sken.Drupal.PHP">
+    <name>Drupal PHP</name>
+    <root-zone>source.drupal.php</root-zone>
+    
+    <meta>
+      <name>
+        Drupal PHP
+      </name>
+      <description>
+        drupal.sugar for Espresso.
+      </description>
+      <author>
+        Stijn De Meyere
+      </author>
+      <identifier>
+        be.sken.Sugar.Drupal
+      </identifier>
+      <version status="development">
+        0.1
+      </version>
+    </meta>
+    
+    <detectors>
+      <extension casesensitive="false">module</extension>
+      <extension casesensitive="false">install</extension>
+      <extension casesensitive="false">profile</extension>
+      <combo>
+        <extension casesensitive="false">php</extension>
+      	<match-content lines="2">^(&lt;)(\?)(php|=)?
+// $Id</match-content>
+      </combo>
+      <combo>
+        <extension casesensitive="false">phps</extension>
+      	<match-content lines="2">^(&lt;)(\?)(php|=)?
+// $Id</match-content>
+      </combo>
+      <combo>
+        <extension casesensitive="false">inc</extension>
+      	<match-content lines="2">^(&lt;)(\?)(php|=)?
+// $Id</match-content>
+      </combo>
+    </detectors>  
+  </language> 
+</settings>
