@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense>
+	<provider>
+    <selector>container.block.embedded.source.php:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.function > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.method > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), container.block > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), literal.collection.dictionary.array</selector>
+		
+		<completions>be.sken.identifier.variable.global</completions>
+		<complete-match>[\?\$a-zA-Z0-9-_\>]+</complete-match>
+	</provider>
+    
+</codesense>
