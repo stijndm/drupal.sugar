@@ -30,6 +30,24 @@
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/stijn/Documents/Villa%20Viscom/Projecten/Espresso/Drupal%20sugar/CodeSenseLibraries/Drupal.xml</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/stijn/Documents/Villa%20Viscom/Projecten/Espresso/Drupal%20sugar/CodeSenseLibraries/Drupal.globals.values.xml</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/stijn/Documents/Villa%20Viscom/Projecten/Espresso/Drupal%20sugar/CodeSenseProviders/Drupal.xml</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
 		</array>
 	</dict>
 </dict>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <codesense version="1.0">
+  <!-- Drupal global variables -->
   <set name="be.sken.identifier.variable.global">
     <completion string="$active_db" />
     <completion string="$base_path" />
@@ -45,5 +46,9 @@
     <completion string="$xrds_current_service" />
     <completion string="$xrds_open_elements" />
     <completion string="$xrds_services" />
+    
+    <!--  This should go somewhere else.  -->
+    <completion string="$node" />
+    
   </set>
 </codesense>

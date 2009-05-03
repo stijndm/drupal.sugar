@@ -6,5 +6,11 @@
 		<completions>be.sken.identifier.variable.global</completions>
 		<complete-match>[\?\$a-zA-Z0-9-_\>]+</complete-match>
 	</provider>
-    
+  
+  <!-- Global variables values -->
+	<provider>
+		<selector>identifier.variable.local:capture(name) + operator.pointer</selector>
+		<completions>be.sken.identifier.variable.global.${name}</completions>
+		<complete-match>[a-zA-Z0-9-]*</complete-match>
+	</provider>  
 </codesense>
