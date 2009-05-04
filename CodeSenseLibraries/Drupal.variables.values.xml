@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense version="1.0">  
+  <!-- Global variables objects -->
+  <set name="be.sken.identifier.variable.values.$conf">
+    <completion string="theme_default" />
+    <completion string="site_name" />
+    <completion string="site_mail" />
+    <completion string="date_default_timezone" />
+    <completion string="user_email_verification" />
+    <completion string="clean_url" />
+    <completion string="theme_settings" />
+    <completion string="install_profile" />
+    <completion string="format" />
+    <completion string="anonymous" />
+    <completion string="site_frontpage" />
+  </set>
+  <set name="be.sken.identifier.variable.values.$language">
+    <completion string="language" />
+    <completion string="name" />
+    <completion string="native" />
+    <completion string="direction" />
+    <completion string="enabled" />
+    <completion string="plurals" />
+    <completion string="formula" />
+    <completion string="domain" />
+    <completion string="prefix" />
+    <completion string="weight" />
+    <completion string="javascript" />
+  </set>
+  <set name="be.sken.identifier.variable.values.$user">
+    <completion string="uid" />
+    <completion string="name" />
+    <completion string="mail" />
+    <completion string="created" />
+    <completion string="access" />
+    <completion string="login" />
+    <completion string="status" />
+    <completion string="language" />
+    <completion string="picture" />
+    <completion string="roles" />
+  </set>
+  
+  <!-- Content objects --> 
+  <set name="be.sken.identifier.variable.values.$node">
+    <completion string="nid" />
+    <completion string="type" />
+    <completion string="language" />
+    <completion string="uid" />
+    <completion string="status" />
+    <completion string="created" />
+    <completion string="changed" />
+    <completion string="comment" />
+    <completion string="promote" />
+    <completion string="moderate" />
+    <completion string="sticky" />
+    <completion string="tnid" />
+    <completion string="translate" />
+    <completion string="vid" />
+    <completion string="revision_uid" />
+    <completion string="title" />
+    <completion string="body" />
+    <completion string="log" />
+    <completion string="revision_timestamp" />
+    <completion string="format" />
+    <completion string="name" />
+    <completion string="picture" />
+    <completion string="data" />
+    <completion string="path" />
+    <completion string="readmore" />
+    <completion string="content" />
+    <completion string="links" />
+  </set>
+</codesense>

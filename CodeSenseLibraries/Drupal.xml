@@ -45,10 +45,97 @@
     <completion string="$user" />
     <completion string="$xrds_current_service" />
     <completion string="$xrds_open_elements" />
-    <completion string="$xrds_services" />
+    <completion string="$xrds_services" />    
+  </set>
+  
+  <!-- Drupal content variables -->
+  <set name="be.sken.identifier.variable.content">
+    <completion string="$node" />    
+    <completion string="$taxonomy" />    
+    <completion string="$block" />    
+  </set>
+  
+  
+  <!-- Drupal API -->
+  <set name="be.sken.identifier.function">
+    <behavior>
+      <append-dynamic>
+        <matched-suffix>(\s*:)|[^:]</matched-suffix>
+        <transform-into>(${1:arguments})</transform-into>
+      </append-dynamic>
+    </behavior>
     
-    <!--  This should go somewhere else.  -->
-    <completion string="$node" />
+    <!--  Actions API  -->
+    <completion string="actions_actions_map">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$actions})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
     
+    <completion string="actions_delete">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$aid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="actions_do">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$action_ids}, ${2:&amp;\$object}${3:, ${4:\$context = NULL}, ${5:\$a1 = NULL}, ${6:\$a2 = NULL}})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="actions_function_lookup">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$hash})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="actions_get_all_actions">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="actions_list">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="actions_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$aid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="actions_save">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$function}, ${2:\$type}, ${3:\$params}, ${4:\$desc}${5:, \$aid = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="actions_synchronize">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$actions_in_code = array()}, ${2:\$delete_orphans = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
   </set>
 </codesense>
