@@ -70,4 +70,12 @@
     <completion string="content" />
     <completion string="links" />
   </set>
+  
+  <set name="be.sken.identifier.variable.values.$block">
+    <completion string="subject" />
+    <completion string="content" />
+    <completion string="module" />
+    <completion string="delta" />
+    <completion string="region" />
+  </set>
 </codesense>

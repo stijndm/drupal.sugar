@@ -50,9 +50,65 @@
   
   <!-- Drupal content variables -->
   <set name="be.sken.identifier.variable.content">
+    <!--  Objects  -->
     <completion string="$node" />    
     <completion string="$taxonomy" />    
-    <completion string="$block" />    
+    <completion string="$block" />
+    <completion string="$comment" /> <!--  This is also a boolean in the context of node.tpl.php  -->
+    <!--  Arrays  -->
+    <completion string="$primary_links" />    
+    <completion string="$secondary_links" />    
+    <!--  Variables  -->
+    <completion string="$author" />  
+    <completion string="$block_id" /> 
+    <completion string="$block_zebra" />   
+    <completion string="$breadcrumb" />      
+    <completion string="$body_classes" />      
+    <completion string="$closure" />   
+    <completion string="$comment_count" />      
+    <completion string="$content" />          
+    <completion string="$created" />          
+    <completion string="$date" />   
+    <completion string="$directory" /> 
+    <completion string="$feed_icons" /> 
+    <completion string="$footer" />
+    <completion string="$footer_message" /> 
+    <completion string="$front_page" />      
+    <completion string="$head" />    
+    <completion string="$head_title" />
+    <completion string="$help" /> 
+    <completion string="$id" /> 
+    <completion string="$links" />  
+    <completion string="$logo" />   
+    <completion string="$messages" /> 
+    <completion string="$mission" /> 
+    <completion string="$name" />
+    <completion string="$new" />
+    <completion string="$node_url" />
+    <completion string="$picture" /> 
+    <completion string="$scripts" />   
+    <completion string="$search_box" /> 
+    <completion string="$signature" />  
+    <completion string="$site_name" />  
+    <completion string="$site_slogan" /> 
+    <completion string="$status" /> 
+    <completion string="$styles" /> 
+    <completion string="$submitted" />   
+    <completion string="$tabs" />     
+    <completion string="$terms" />    
+    <completion string="$title" />    
+    <completion string="$type" />    
+    <completion string="$uid" />  
+    <completion string="$zebra" />    
+    <!--  Booleans/Flags  -->
+    <completion string="$logged_in" />
+    <completion string="$is_admin" /> 
+    <completion string="$is_front" /> 
+    <completion string="$page" />  
+    <completion string="$promote" /> 
+    <completion string="$readmore" /> 
+    <completion string="$sticky" /> 
+    <completion string="$teaser" /> 
   </set>
   
   
@@ -64,6 +120,24 @@
         <transform-into>(${1:arguments})</transform-into>
       </append-dynamic>
     </behavior>
+    
+    <!--  General system functions  -->
+    <completion string="arg">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$index}${2:, \$path = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="base_path">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
@@ -134,6 +208,286 @@
       <behavior>
         <append-static>
           <transform-into>(${1:\$actions_in_code = array()}, ${2:\$delete_orphans = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Aggregator API  -->    
+    <completion string="aggregator_category_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$cid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="aggregator_element_data">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$parser}, ${2:\$data})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="aggregator_element_end">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$parser}, ${2:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="aggregator_element_start">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$parser}, ${2:\$name}, ${3:\$attributes})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="aggregator_feed_items_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$sql})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="aggregator_feed_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$fid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="aggregator_filter_xss">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$value})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="aggregator_parse_feed">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$data}, ${2:\$feed})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="aggregator_parse_w3cdtf">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$date_str})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="aggregator_refresh">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$feed})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="aggregator_remove">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$feed})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Batch API  -->    
+    <completion string="batch_get">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="batch_process">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$redirect = NULL}, ${2:\$url = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="batch_set">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$batch_definition})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Block API  -->    
+    <completion string="block_box_get">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$bid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="block_list">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$region})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Blogapi API  -->    
+    <completion string="blogapi_blogger_delete_post">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$appkey}, ${2:\$postid}, ${3:\$username}, ${4:\$password}, ${5:\$publish})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_blogger_edit_post">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$appkey}, ${2:\$postid}, ${3:\$username}, ${4:\$password}, ${5:\$content}, ${6:\$publish})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_blogger_get_post">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$appkey}, ${2:\$postid}, ${3:\$username}, ${4:\$password})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_blogger_get_recent_posts">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$appkey}, ${2:\$blogid}, ${3:\$username}, ${4:\$password}, ${5:\$number_of_posts}, ${6:\$bodies = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_blogger_get_users_blogs">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$appid}, ${2:\$username}, ${3:\$password})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_blogger_get_user_info">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$appkey}, ${2:\$username}, ${3:\$password})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_blogger_new_post">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$appkey}, ${2:\$blogid}, ${3:\$username}, ${4:\$password}, ${5:\$content}, ${6:\$publish})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_blogger_title">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$contents})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_error">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$message})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_metaweblog_get_category_list">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$blogid}, ${2:\$username}, ${3:\$password})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_metaweblog_new_media_object">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$blogid}, ${2:\$username}, ${3:\$password}, ${4:\$file})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_mt_get_post_categories">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$postid}, ${2:\$username}, ${3:\$password})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_mt_publish_post">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$postid}, ${2:\$username}, ${3:\$password})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_mt_set_post_categories">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$postid}, ${2:\$username}, ${3:\$password}, ${4:\$categories})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_mt_supported_text_filters">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_mt_validate_terms">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_status_error_check">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node}, ${2:\$original_status})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="blogapi_validate_user">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$username}, ${2:\$password})</transform-into>
         </append-static>
       </behavior>
     </completion>
