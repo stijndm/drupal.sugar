@@ -9,7 +9,7 @@
 		<complete-match>[\?\$a-zA-Z0-9-_\>]+</complete-match>
 	</provider>
   
-  <!-- Global variables values -->
+  <!-- Object variables -->
 	<provider>
 		<selector>identifier.variable.local:capture(name) + *, identifier.variable.local:capture(name) + * + *</selector>
 		<completions>be.sken.identifier.variable.values.${name}</completions>
