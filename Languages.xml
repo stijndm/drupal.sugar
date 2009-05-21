@@ -27,6 +27,7 @@
       <extension casesensitive="false">module</extension>
       <extension casesensitive="false">install</extension>
       <extension casesensitive="false">profile</extension>
+      <extension casesensitive="false">test</extension>
       <combo>
         <extension casesensitive="false">php</extension>
       	<match-content lines="2">^(&lt;)(\?)(php|=)?
