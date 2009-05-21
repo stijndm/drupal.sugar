@@ -491,5 +491,121 @@
         </append-static>
       </behavior>
     </completion>
+    
+    
+    <!--  Book API  -->    
+    <completion string="book_build_active_trail">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$book_link})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="book_children">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$book_link})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+      
+    <completion string="book_get_books">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="book_get_flat_menu">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$book_link})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="book_next">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$book_link})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="book_outline">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="book_prev">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$book_link})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="book_render">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="book_toc">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$bid}, ${2:\$exclude = array()}, ${3:\$depth_limit})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="book_type_is_allowed">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="book_update_bid">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$book_link})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Cache API  -->    
+    <completion string="cache_clear_all">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$cid = NULL}, ${2:\$table = NULL}, ${3:\$wildcard = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="cache_get">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$cid}, ${2:\$table = 'cache'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+     
+    <completion string="cache_set">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$cid}, ${2:\$data}, ${3:\$table = 'cache'}, ${4:\$expire = CACHE_PERMANENT}, ${5:\$headers = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
   </set>
 </codesense>
