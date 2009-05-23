@@ -138,6 +138,46 @@
       </behavior>
     </completion>
     
+    <completion string="check_file">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:filename})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="check_markup">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text}, ${2:\$format = FILTER_FORMAT_DEFAULT}, ${3:\$check = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="check_plain">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="check_url">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:url})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="confirm_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form}, ${2:\$question}, ${3:\$path}${4:, ${5:\$description = NULL}, ${6:\$yes = NULL}, ${7:\$no = NULL}, ${1:\$name = 'confirm'}})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
@@ -607,5 +647,97 @@
         </append-static>
       </behavior>
     </completion>
+    
+    
+    <!--  Color API  -->    
+    <completion string="color_get_info">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$theme})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="color_get_palette">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$theme}, ${2:\$default = false})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    
+    <!--  Comment API  -->    
+    <completion string="comment_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$op}, ${2:\$comment})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="comment_get_recent">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$number = 10})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="comment_links">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$comment}, ${2:\$return = 1})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="comment_num_all">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="comment_num_new">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid}, ${2:\$timestamp = 0})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="comment_num_replies">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$pid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="comment_render">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node}, ${2:\$cid = 0})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="comment_save">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$edit})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="comment_validate">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$edit})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
   </set>
 </codesense>
