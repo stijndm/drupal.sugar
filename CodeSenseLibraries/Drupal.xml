@@ -178,6 +178,30 @@
       </behavior>
     </completion>
     
+    <completion string="conf_path">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$require_settings = TRUE}, ${2:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="custom_url_rewrite_inbound">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp\$result}, ${2:\$path}, ${3:\$path_language})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="custom_url_rewrite_outbound">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp\$path}, ${2:&amp\$options}, ${3:\$original_path})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
@@ -739,5 +763,127 @@
         </append-static>
       </behavior>
     </completion> 
+    
+    
+    <!--  Database Layer -->    
+    <completion string="db_add_column">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$column}, ${4:\$type}, ${5:\$attributes = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_add_field">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$field}, ${4:\$new_keys = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_add_index">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$name}, ${4:\$fields})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_add_primary_key">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$fields})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_add_unique_key">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$name}, ${4:\$fields})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_affected_rows">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="db_change_column">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$column}, ${4:\$column_new}, ${5:\$type}, ${6:\$attributes = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_change_field">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$field}, ${4:\$field_new}, ${5:\$spec}, ${6:\$new_keys = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_check_setup">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_column_exists">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$table}, ${2:\$column})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_connect">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$url})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_create_table">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp\$ret}, ${2:\$name}, ${3:\$table})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_create_table_sql">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name}, ${2:\$table})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_decode_blob">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$data})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_distinct_field">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:$table}, ${2:\$field}, ${3:\$query})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
   </set>
 </codesense>
