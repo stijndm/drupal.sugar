@@ -881,7 +881,255 @@
     <completion string="db_distinct_field">
       <behavior>
         <append-static>
-          <transform-into>(${1:$table}, ${2:\$field}, ${3:\$query})</transform-into>
+          <transform-into>(${1:\$table}, ${2:\$field}, ${3:\$query})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_drop_field">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$ret}, ${2:\$table}, ${3:\$field})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_drop_index">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$ret}, ${2:\$table}, ${3:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_drop_primary_key">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$ret}, ${2:\$table})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_drop_table">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$ret}, ${2:\$table})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_drop_unique_key">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$ret}, ${2:\$table}, ${3:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_encode_blob">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$data})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_error">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_escape_string">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_escape_table">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_fetch_array">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$result})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_fetch_object">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$result})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_field_names">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$fields})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_field_set_default">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$ret}, ${2:\$table}, ${3:\$field}, ${4:\$default})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_field_set_no_default">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$ret}, ${2:\$table}, ${3:\$field})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_is_active">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_last_insert_id">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$table}, ${2:\$field})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_lock_table">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$table})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_placeholders">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$arguments}${2: ,${3:\$type = 'int'}})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_prefix_tables">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$sql})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_query">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$query})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_query_range">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$query})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_query_temporary">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$query})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_rename_table">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$ret}, ${2:\$table}, ${3:\$new_name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_result">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$result})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_set_active">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name = 'default'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_status_report">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_table_exists">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$table})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_type_map">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_type_placeholder">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_unlock_tables">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="db_version">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
         </append-static>
       </behavior>
     </completion>
