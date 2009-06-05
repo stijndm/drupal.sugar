@@ -189,7 +189,7 @@
     <completion string="custom_url_rewrite_inbound">
       <behavior>
         <append-static>
-          <transform-into>(${1:&amp\$result}, ${2:\$path}, ${3:\$path_language})</transform-into>
+          <transform-into>(${1:&amp;\$result}, ${2:\$path}, ${3:\$path_language})</transform-into>
         </append-static>
       </behavior>
     </completion>
@@ -197,7 +197,7 @@
     <completion string="custom_url_rewrite_outbound">
       <behavior>
         <append-static>
-          <transform-into>(${1:&amp\$path}, ${2:&amp\$options}, ${3:\$original_path})</transform-into>
+          <transform-into>(${1:&amp;\$path}, ${2:&amp;\$options}, ${3:\$original_path})</transform-into>
         </append-static>
       </behavior>
     </completion>
@@ -769,7 +769,7 @@
     <completion string="db_add_column">
       <behavior>
         <append-static>
-          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$column}, ${4:\$type}, ${5:\$attributes = array()})</transform-into>
+          <transform-into>(${1:&amp;\$ret}, ${2:\$table}, ${3:\$column}, ${4:\$type}, ${5:\$attributes = array()})</transform-into>
         </append-static>
       </behavior>
     </completion>
@@ -777,7 +777,7 @@
     <completion string="db_add_field">
       <behavior>
         <append-static>
-          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$field}, ${4:\$new_keys = array()})</transform-into>
+          <transform-into>(${1:&amp;\$ret}, ${2:\$table}, ${3:\$field}, ${4:\$new_keys = array()})</transform-into>
         </append-static>
       </behavior>
     </completion>
@@ -785,7 +785,7 @@
     <completion string="db_add_index">
       <behavior>
         <append-static>
-          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$name}, ${4:\$fields})</transform-into>
+          <transform-into>(${1:&amp;\$ret}, ${2:\$table}, ${3:\$name}, ${4:\$fields})</transform-into>
         </append-static>
       </behavior>
     </completion>
@@ -793,7 +793,7 @@
     <completion string="db_add_primary_key">
       <behavior>
         <append-static>
-          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$fields})</transform-into>
+          <transform-into>(${1:&amp;\$ret}, ${2:\$table}, ${3:\$fields})</transform-into>
         </append-static>
       </behavior>
     </completion>
@@ -801,7 +801,7 @@
     <completion string="db_add_unique_key">
       <behavior>
         <append-static>
-          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$name}, ${4:\$fields})</transform-into>
+          <transform-into>(${1:&amp;\$ret}, ${2:\$table}, ${3:\$name}, ${4:\$fields})</transform-into>
         </append-static>
       </behavior>
     </completion>
@@ -817,7 +817,7 @@
     <completion string="db_change_column">
       <behavior>
         <append-static>
-          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$column}, ${4:\$column_new}, ${5:\$type}, ${6:\$attributes = array()})</transform-into>
+          <transform-into>(${1:&amp;\$ret}, ${2:\$table}, ${3:\$column}, ${4:\$column_new}, ${5:\$type}, ${6:\$attributes = array()})</transform-into>
         </append-static>
       </behavior>
     </completion>
@@ -825,7 +825,7 @@
     <completion string="db_change_field">
       <behavior>
         <append-static>
-          <transform-into>(${1:&amp\$ret}, ${2:\$table}, ${3:\$field}, ${4:\$field_new}, ${5:\$spec}, ${6:\$new_keys = array()})</transform-into>
+          <transform-into>(${1:&amp;\$ret}, ${2:\$table}, ${3:\$field}, ${4:\$field_new}, ${5:\$spec}, ${6:\$new_keys = array()})</transform-into>
         </append-static>
       </behavior>
     </completion>
@@ -857,7 +857,7 @@
     <completion string="db_create_table">
       <behavior>
         <append-static>
-          <transform-into>(${1:&amp\$ret}, ${2:\$name}, ${3:\$table})</transform-into>
+          <transform-into>(${1:&amp;\$ret}, ${2:\$name}, ${3:\$table})</transform-into>
         </append-static>
       </behavior>
     </completion>
