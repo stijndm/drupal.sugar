@@ -218,6 +218,46 @@
       </behavior>
     </completion>
     
+    <completion string="element_child">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$key})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="element_children">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$element})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="element_properties">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$element})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="element_property">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$key})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="element_sort">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$a}, ${2:\$b})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
