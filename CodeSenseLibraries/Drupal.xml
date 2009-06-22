@@ -202,6 +202,22 @@
       </behavior>
     </completion>
     
+    <completion string="decode_entities">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text}, ${2:\$exclude = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="do_search">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$keywords}, ${2:\$type}, ${3:\$join1 = ''}, ${4:\$where1 = '1 = 1'}, ${5:\$arguments1 = array()}, ${6:\$columns2 = 'i.relevance AS score'}, ${7:\$join2 = ''}, ${8:\$arguments2 = array()}, ${9:\$sort_parameters = 'ORDER BY score DESC'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
@@ -1130,6 +1146,1016 @@
       <behavior>
         <append-static>
           <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Drupal functions -->    
+    <completion string="drupal_access_denied">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_add_css">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$path = NULL}, ${2:\$type = 'module'}, ${3:\$media = 'all'}, ${4:\$preprocess = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_add_feed">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$url = NULL}, ${2:\$title = 'module'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_add_js">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$data = NULL}, ${2:\$type = 'module'}, ${3:\$scope = 'header'}, ${4:\$defer = FALSE}, ${5:\$cache = TRUE}, ${6:\$preprocess = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_add_link">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$attributes = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_add_tabledrag">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$table_id}, ${2:\$action}, ${3:\$relationship}, ${4:\$group}, ${5:\$subgroup = NULL}, ${6:\$source = NULL}, ${7:\$hidden = TRUE}, ${8:\$limit = 0})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_alter">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type}, ${2:&amp;\$data})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_anonymous_user">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$session = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_attributes">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$attributes = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_bootstrap">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$phase})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_build_css_cache">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$types}, ${2:\$filename})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_build_js_cache">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$types}, ${2:\$filename})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_check_module">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_check_profile">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$profile})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_clear_css_cache">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_clear_js_cache">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_clear_path_cache">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_clone">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$object})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_common_theme">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_convert_to_utf8">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$data}, ${2:\$encoding})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_cron_cleanup">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_cron_run">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_detect_baseurl">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$file = 'install.php'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_detect_database_types">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_discover_template">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$paths}, ${2:\$suggestions}, ${3:\$extension = '.tpl.php'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_error_handler">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$errno}, ${2:\$message}, ${3:\$filename}, ${4:\$line}, ${4:\$context})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_eval">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$code})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_execute">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_id}, ${2:&amp;\$form_state})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_explode_tags">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tags})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_final_markup">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$content})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_find_theme_functions">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$cache}, ${2:\$prefixes})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_find_theme_templates">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$cache}, ${2:\$extension}, ${3:\$path})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_flush_all_caches">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_breadcrumb">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_content">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$region = NULL}, ${2:\$delimiter = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_css">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$css = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_destination">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_feeds">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$delimiter = "\\n"})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_filename">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type}, ${2:\$name}, ${3:\$filename = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_id})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_headers">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_html_head">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_installed_schema_version">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module}, ${2:\$reset = FALSE}, ${3:\$array = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_install_files">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module_list = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_js">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$scope = 'header'}, ${2:\$javascript = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_messages">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type = NULL}, ${2:\$clear_queue = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_normal_path">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$path}, ${2:\$path_language = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_path">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type}, ${2:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_private_key">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_schema">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$table = NULL}, ${2:\$rebuild = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_schema_unprocessed">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module}, ${2:\$table = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_schema_versions">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_title">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_get_token">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$value = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_goto">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$path = ''}, ${2:\$query = NULL}, ${3:\$fragment = NULL}, ${4:\$http_response_code = 302})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_html_to_text">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string}, ${2:\$allowed_tags = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_http_request">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$url}, ${2:\$headers = array()}, ${3:\$method = 'GET'}, ${4:\$data = NULL}, ${5:\$retry = 3})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_implode_tags">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tags})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_init_language">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_init_path">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_install_fix_file">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$file}, ${2:\$mask}, ${3:\$message = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_install_mkdir">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$file}, ${2:\$mask}, ${3:\$message = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_install_modules">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module_list = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_install_profile_name">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_install_schema">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_install_system">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_is_denied">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type}, ${2:\$mask})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_is_front_page">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_json">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$var = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type}, ${2:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_load_stylesheet">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$file}, ${2:\$optimize = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_load_updates">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_lookup_path">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$action}, ${2:\$path = ''}, ${3:\$path_language = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_mail">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module}, ${2:\$key}, ${3:\$to}, ${4:\$language}, ${5:\$params = array()}, ${6:\$from = NULL}, ${7:\$send = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_mail_send">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$message})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_maintenance_theme">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_map_assoc">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$array}, ${2:\$function = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_match_path">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$path}, ${2:\$patterns})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_not_found">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_page_cache_header">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$cache})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_page_footer">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_page_header">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_page_cache_header">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$filename})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_prepare_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_id}, ${2:&amp;\$form}, ${3:&amp;\$form_state})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_process_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_id}, ${2:&amp;\$form}, ${3:&amp;\$form_state})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_query_string_encode">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$query}, ${2:\$exclude = array()}, ${3:\$parent = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_rebuild_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_id}, ${2:&amp;\$form_state}, ${3:\$args}, ${4:\$form_build_id = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_rebuild_theme_registry">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_redirect_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form}, ${2:\$redirect = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_render">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$elements})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_render_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_id}, ${2:&amp;\$form})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_retrieve_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_id}, ${2:&amp;\$form_state})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_rewrite_settings">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$settings = array()}, ${2:\$prefix = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_schema_fields_sql">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$table}, ${2:\$prefix = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_set_breadcrumb">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$breadcrumb = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_set_content">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$region = NULL}, ${2:\$data = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_set_header">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$header = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_set_html_head">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$data = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_set_message">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$message = NULL}, ${2:\$type = ${3:'status|warning|error'}}, ${4:\$repeat = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_set_title">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$title = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_site_offline">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_strlen">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_strtolower">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_strtoupper">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_substr">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text}, ${2:\$start}, ${3:\$length = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_system_listing">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$mask}, ${2:\$directory}, ${3:\$key = 'name'}, ${4:\min_depth = 1})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_test_mysql">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$url}, ${2:&amp;\$success})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_test_mysqli">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$url}, ${2:&amp;\$success})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_test_pgsql">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$url}, ${2:&amp;\$success})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_to_js">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$var})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_truncate_bytes">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string}, ${2:\$len})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_ucfirst">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_uninstall_module">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_uninstall_schema">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_unpack">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$obj}, ${2:\$field = 'data'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_unset_globals">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_urlencode">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_validate_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_id}, ${2:\$form}, ${3:&amp;\$form_state})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_validate_utf8">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_valid_http_host">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$host})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_valid_token">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$token}, ${2:\$value = ''}, ${3:\$skip_anonymous = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_verify_install_file">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$file}, ${2:\$mask = NULL}, ${3:\$type = 'file'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_verify_profile">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$profile}, ${2:\$locale})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_wrap_mail">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text}, ${2:\$indent = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_write_record">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$table}, ${2:&amp;\$object}, ${3:\$update = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="drupal_xml_parser_create">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$data})</transform-into>
         </append-static>
       </behavior>
     </completion>
