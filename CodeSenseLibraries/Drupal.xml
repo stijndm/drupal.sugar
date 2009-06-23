@@ -2655,5 +2655,47 @@
         </append-static>
       </behavior>
     </completion>
+    
+    
+    <!--  Forum system  -->    
+    <completion string="forum_get_forums">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid = 0})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="forum_get_topics">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid}, ${2:\$sortby}, ${3:\$forum_per_page})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="forum_overview">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$form_state})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="forum_page">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid = 0})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="forum_term_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
   </set>
 </codesense>
