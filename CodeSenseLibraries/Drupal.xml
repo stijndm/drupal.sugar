@@ -290,6 +290,14 @@
       </behavior>
     </completion>
     
+    <completion string="l">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text}, ${2:\$path}, ${3:\$options = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
