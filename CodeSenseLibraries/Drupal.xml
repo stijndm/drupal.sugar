@@ -2425,5 +2425,95 @@
         </append-static>
       </behavior>
     </completion>
+    
+    
+    <!--  Filter systems  -->    
+    <completion string="filter_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$format})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="filter_admin_format_title">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$format})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="filter_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$value= FILTER_FORMAT_DEFAULT}, ${2:\$weight = NULL}, ${3:\$parents = array('format')})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="filter_formats">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$index = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="filter_format_allowcache">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$format})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="filter_list_all">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="filter_list_format">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$format})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="filter_resolve_format">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$format})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="filter_xss">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string}, ${2:\$allowed_tags = array('a', 'em', 'strong', 'cite', 'code', 'ul', 'ol', 'li', 'dl', 'dt', 'dd')})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="filter_xss_admin">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="filter_xss_bad_protocol">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string}, ${2:\$decode = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
   </set>
 </codesense>
