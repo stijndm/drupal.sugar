@@ -258,6 +258,30 @@
       </behavior>
     </completion>
     
+    <completion string="fix_gpc_magic">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="flood_is_allowed">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name}, ${2:\$threshold})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="flood_register_event">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
@@ -2512,6 +2536,64 @@
       <behavior>
         <append-static>
           <transform-into>(${1:\$string}, ${2:\$decode = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Format system  -->    
+    <completion string="format_date">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$timestamp}, ${2:\$type = 'medium'}, ${3:\$format = ''}, ${4:\timezone = NULL}, ${5:\langcode = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="format_interval">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$timestamp}, ${2:\$granularity = 2}, ${3:\$langcode = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="format_plural">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$count}, ${2:\$singular}, ${3:\$plural}, ${4:\$args = array()}, ${5:\$langcode = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="format_rss_channel">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$title}, ${2:\$link}, ${3:\$description}, ${4:\$items}, ${5:\$langcode = NULL}, ${6:\$args = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="format_rss_item">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$title}, ${2:\$link}, ${3:\$description}, ${4:\$args = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="format_size">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$size}, ${2:\$langcode = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="format_xml_elements">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$array})</transform-into>
         </append-static>
       </behavior>
     </completion>
