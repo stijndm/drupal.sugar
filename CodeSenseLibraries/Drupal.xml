@@ -2597,5 +2597,63 @@
         </append-static>
       </behavior>
     </completion>
+    
+    
+    <!--  Form system  -->    
+    <completion string="form_clean_id">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$id = NULL}, ${2:\$flush = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="form_error">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$element}, ${2:\$flush = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="form_options_flatten">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$array}, ${2:\$reset = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="form_select_options">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$element}, ${2:\$choices = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="form_set_cache">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_build_id}, ${2:\$form}, ${3:\$form_state})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="form_set_error">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name = NULL}, ${2:\$message = ''}, ${3:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="form_set_value">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_item}, ${2:\$value}, ${3:&amp;\$form_state})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
   </set>
 </codesense>
