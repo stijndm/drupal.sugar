@@ -282,6 +282,14 @@
       </behavior>
     </completion>
     
+    <completion string="get_t">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
@@ -2694,6 +2702,128 @@
       <behavior>
         <append-static>
           <transform-into>(${1:\$tid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Image API  -->    
+    <completion string="image_crop">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$source}, ${2:\$destination}, ${3:\$x}, ${4:\$y}, ${5:\$width}, ${6:\$height})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="image_gd_check_settings">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="image_gd_close">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$res}, ${2:\$destination}, ${3:\$extension})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="image_gd_crop">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$source}, ${2:\$destination}, ${3:\$x}, ${4:\$y}, ${5:\$width}, ${6:\$height})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="image_gd_info">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="image_gd_open">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$file}, ${2:\$extension})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="image_gd_resize">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$source}, ${2:\$destination}, ${3:\$width}, ${4:\$height})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="image_gd_rotate">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$source}, ${2:\$destination}, ${3:\$degrees}, ${4:\$background = 0x000000})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="image_get_available_toolkits">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="image_get_info">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$file})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="image_get_toolkit">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="image_resize">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$source}, ${2:\$destination}, ${3:\$width}, ${4:\$height})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="image_rotate">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$source}, ${2:\$destination}, ${3:\$degrees}, ${4:\$background = 0x000000})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="image_scale">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$source}, ${2:\$destination}, ${3:\$width}, ${4:\$height})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="image_scale_and_crop">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$source}, ${2:\$destination}, ${3:\$width}, ${4:\$height})</transform-into>
         </append-static>
       </behavior>
     </completion>
