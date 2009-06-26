@@ -290,6 +290,22 @@
       </behavior>
     </completion>
     
+    <completion string="mysqli_is_available">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="mysql_is_available">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
@@ -3454,6 +3470,112 @@
       <behavior>
         <append-static>
           <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  NodeA API  -->    
+    <completion string="node_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$op = 'view|update|delete|create'}, ${2:\$node}, ${3:\$account = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="node_access_acquire_grants">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="node_access_grants">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$op}, ${2:\$account = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="node_access_needs_rebuild">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$rebuild = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="node_access_rebuild">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$batch_mode = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="node_access_view_all_nodes">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_access_write_grants">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node}, ${2:\$grants}, ${3:\$realm = NULL}, ${4:\$delete = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="node_assign_owner_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node}, ${2:\$context})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_build_content">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node}, ${2:\$teaser = FALSE}, ${3:\$page = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_build_filter_query">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_comment_mode">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_db_rewrite_sql">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$query}, ${2:\$primary_table}, ${3:\$primary_field})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_delete">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid})</transform-into>
         </append-static>
       </behavior>
     </completion>
