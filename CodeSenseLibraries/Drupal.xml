@@ -3580,6 +3580,262 @@
       </behavior>
     </completion>
     
+    <completion string="node_feed">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nids = FALSE}, ${2:\$channel = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_filters">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_get_types">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$op = 'types'}, ${2:\$node = NULL}, ${3:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_hook">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node}, ${2:\$hook})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_invoke">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node}, ${2:\$hook}, ${3:\$a2 = NULL}, ${4:\$a3 = NULL}, ${4:\$a3 = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_last_changed">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_last_viewed">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_link">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type}, ${2:\$node = NULL}, ${3:\$teaser = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$param = array()}, ${2:\$revision = NULL}, ${3:\$reset = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_make_sticky_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node}, ${2:\$context = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_make_unsticky_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node}, ${2:\$context = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_mark">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid}, ${2:\$timestamp})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_mass_update">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nodes}, ${2:\$updates})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_object_prepare">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_prepare">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node}, ${2:\$teaser = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_preview">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_promote_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node}, ${2:\$context = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_publish_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node}, ${2:\$context = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_revision_list">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_save">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_save_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_tag_new">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_teaser">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$body}, ${2:\$format = NULL}, ${:\$size = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_types_rebuild">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_type_delete">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_type_reset">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$type})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_type_save">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$info})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_type_update_nodes">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$old_type}, ${2:\$type})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_unpromote_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node}, ${2:\$context = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_unpublish_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node}, ${2:\$context = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_unpublish_by_keyword_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node}, ${2:\$context = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="node_view">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node}, ${2:\$teaser = FALSE}, ${3:\$page = FALSE}, ${4:\$links = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Theme API  -->    
     <completion string="list_themes">
