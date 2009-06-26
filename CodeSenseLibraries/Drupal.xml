@@ -298,6 +298,14 @@
       </behavior>
     </completion>
     
+    <completion string="map_month">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$month})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
@@ -2832,6 +2840,500 @@
       <behavior>
         <append-static>
           <transform-into>(${1:\$source}, ${2:\$destination}, ${3:\$width}, ${4:\$height})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Language and locale API  -->    
+    <completion string="language_default">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$property = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="language_from_browser">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="language_initialize">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="language_list">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$field = 'language'}, ${2:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="language_url_rewrite">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$path}, ${2:&amp;\$options)</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="locale">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string = NULL}, ${2:\$langcode = NULL}, ${3:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="locale_add_language">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$langcode}, ${2:\$name = NULL}, ${3:\$native = NULL}, ${4:\$direction = LANGUAGE_LTR|LANGUAGE_RTL}, ${5:\$domain = ''}, ${6:\$prefix = ''}, ${7:\$enabled = TRUE}, ${8:\$default = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="locale_batch_by_language">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$langcode}, ${2:\$finished = NULL}, ${3:\$skip = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="locale_get_plural">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$count}, ${2:\$langcode = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="locale_language_list">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$field = 'name'}, ${2:\$all = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="locale_language_name">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$lang})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="locale_string_is_safe">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="locale_system_update">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$components})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="locale_update_js_files">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Menu API  -->    
+    <completion string="menu_cache_clear">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$menu_name = 'navigation'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="menu_cache_clear_all">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_execute_active_handler">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$path = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="menu_get_active_breadcrumb">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="menu_get_active_help">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="menu_get_active_menu_name">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="menu_get_active_title">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="menu_get_active_trail">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_get_ancestors">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$parts})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_get_item">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$path = NULL}, ${2:\$router_item = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_get_menus">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$all = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_get_names">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_get_object">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type = node}, ${2:\$position = 1}, ${3:\$path = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_link_children_relative_depth">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$item})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_link_delete">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$mlid}, ${2:\$path = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_link_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$mlid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_link_maintain">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module}, ${2:\$op = 'insert|update|delete'}, ${3:\$link_path}, ${4:\$link_title})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+       
+    <completion string="menu_link_save">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$item})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="menu_list_system_menus">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="menu_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$menu_name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="menu_local_tasks">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$level = 0}, ${2:\$return_root = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_navigation_links">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$menu_name}, ${2:\$level = 0})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_parent_options">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$menus}, ${2:\$item})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_path_is_external">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$path})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_primary_links">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="menu_primary_local_tasks">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="menu_rebuild">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="menu_reset_item">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$item})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_router_build">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_secondary_links">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="menu_secondary_local_tasks">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="menu_set_active_item">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$path})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_set_active_menu_name">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$menu_name = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_set_active_trail">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$new_trail = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_set_item">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$path}, ${2:\$router_item})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_tab_root_path">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+       
+    <completion string="menu_tail_to_arg">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$arg}, ${2:\$map}, ${3:\$index})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_tree">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$menu_name = 'navigation'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_tree_all_data">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$menu_name = 'navigation'}, ${2:\$item = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_tree_check_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$tree}, ${2:\$node_links = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_tree_collect_node_links">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$tree}, ${2:&amp;\$node_links})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_tree_data">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$result = NULL}, ${2:\$parent = array()}, ${3:\$depth = 1})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_tree_output">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$tree}})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_tree_page_data">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$menu_name = 'navigation'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_unserialize">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$data}, ${2:\$map})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="menu_valid_path">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_item})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Theme API  -->    
+    <completion string="list_themes">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$reset = FALSE})</transform-into>
         </append-static>
       </behavior>
     </completion>
