@@ -146,14 +146,6 @@
       </behavior>
     </completion>
     
-    <completion string="do_search">
-      <behavior>
-        <append-static>
-          <transform-into>(${1:\$keywords}, ${2:\$type}, ${3:\$join1 = ''}, ${4:\$where1 = '1 = 1'}, ${5:\$arguments1 = array()}, ${6:\$columns2 = 'i.relevance AS score'}, ${7:\$join2 = ''}, ${8:\$arguments2 = array()}, ${9:\$sort_parameters = 'ORDER BY score DESC'})</transform-into>
-        </append-static>
-      </behavior>
-    </completion>
-    
     <completion string="element_child">
       <behavior>
         <append-static>
@@ -4064,6 +4056,136 @@
       <behavior>
         <append-static>
           <transform-into>(${1:&amp;\$user})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Search API  -->    
+    <completion string="do_search">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$keywords}, ${2:\$type}, ${3:\$join1 = ''}, ${4:\$where1 = '1 = 1'}, ${5:\$arguments1 = array()}, ${6:\$columns2 = 'i.relevance AS score'}, ${7:\$join2 = ''}, ${8:\$arguments2 = array()}, ${9:\$sort_parameters = 'ORDER BY score DESC'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="search_data">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$keys = NULL}, ${2:\$type = 'node'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_dirty">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$word = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_excerpt">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$keys}, ${2:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_expand_cjk">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$matches})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="search_get_keys">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_index">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$sid}, ${2:\$type}, ${3:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_index_split">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_invoke_preprocess">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_parse_query">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_query_extract">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$key}, ${2:\$option})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_query_insert">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$keys}, ${2:\$option}, ${3:\$value = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_simplify">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_touch_node">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_touch_node">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="search_query_insert">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$sid = NULL}, ${2:\$type = NULL}, ${3:\$reindex = FALSE})</transform-into>
         </append-static>
       </behavior>
     </completion>
