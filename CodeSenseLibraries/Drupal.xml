@@ -3005,6 +3005,22 @@
         </append-static>
       </behavior>
     </completion>
+       
+    <completion string="st">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string}, ${2:\$args = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="t">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string}, ${2:\$args = array()}, ${3:\$langcode = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
     
     
     <!--  Menu API  -->    
@@ -4190,6 +4206,212 @@
       </behavior>
     </completion>
     
+    
+    <!--  Sessions  -->    
+    <completion string="session_save_session">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$status = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="sess_close">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="sess_count">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$timestamp = 0}, ${2:\$anoymous = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="sess_destroy_sid">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$sid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="sess_destroy_uid">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$uid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="sess_gc">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$lifetime})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="sess_open">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$save_path}, ${2:\$session_name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="sess_read">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$key})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="sess_regenerate">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="sess_write">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$key}, ${2:\$value})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Statistics API  -->    
+    <completion string="statistics_get">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="statistics_title_list">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$dbfield}, ${2:\$dbrows})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  System function  -->    
+    <completion string="system_admin_compact_mode">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="system_check_directory">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form_element})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="system_check_http_request">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="system_date_time_lookup">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="system_default_region">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$theme})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="system_find_base_theme">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$themes}, ${2:\$key}, ${3:\$used_keys()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="system_get_files_database">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$files}, ${2:\$type})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="system_goto_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$object}, ${2:\$coontext = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="system_message_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$object}, ${2:\$coontext = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="system_region_list">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$theme_key})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="system_send_email_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$object}, ${2:\$coontext = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="system_sort_modules_by_info_name">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$a}, ${2:\$b})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="system_theme_data">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
     
     <!--  Theme Layer  -->    
     <completion string="list_themes">
