@@ -3837,6 +3837,81 @@
     </completion>
     
     
+    <!--  OpenID API  -->    
+    <completion string="openid_association">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$op_endpoint})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="openid_association_request">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$public})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="openid_authentication">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$response})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="openid_authentication_request">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$claimed_id}, ${2:\$identity}, ${3:\$return_to = ''}, ${4:\$assoc_handle = ''}, ${5:\$version = 2})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="openid_begin">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$claimed_id}, ${2:\$return_to = ''}, ${3:\$form_values = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="openid_complete">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$response = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="openid_discovery">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$claimed_id})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="openid_user_identities">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$account})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="openid_verify_assertion">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$op_endpoint}, ${2:\$response})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+
+    
+    
     <!--  Theme API  -->    
     <completion string="list_themes">
       <behavior>
