@@ -121,31 +121,7 @@
       </append-dynamic>
     </behavior>
     
-    <!--  General system functions  -->
-    <completion string="arg">
-      <behavior>
-        <append-static>
-          <transform-into>(${1:\$index}${2:, \$path = NULL})</transform-into>
-        </append-static>
-      </behavior>
-    </completion>
-    
-    <completion string="base_path">
-      <behavior>
-        <append-static>
-          <transform-into>()</transform-into>
-        </append-static>
-      </behavior>
-    </completion>
-    
-    <completion string="check_url">
-      <behavior>
-        <append-static>
-          <transform-into>(${1:url})</transform-into>
-        </append-static>
-      </behavior>
-    </completion>
-    
+    <!--  General system functions  -->    
     <completion string="confirm_form">
       <behavior>
         <append-static>
@@ -158,22 +134,6 @@
       <behavior>
         <append-static>
           <transform-into>(${1:\$require_settings = TRUE}, ${2:\$reset = FALSE})</transform-into>
-        </append-static>
-      </behavior>
-    </completion>
-    
-    <completion string="custom_url_rewrite_inbound">
-      <behavior>
-        <append-static>
-          <transform-into>(${1:&amp;\$result}, ${2:\$path}, ${3:\$path_language})</transform-into>
-        </append-static>
-      </behavior>
-    </completion>
-    
-    <completion string="custom_url_rewrite_outbound">
-      <behavior>
-        <append-static>
-          <transform-into>(${1:&amp;\$path}, ${2:&amp;\$options}, ${3:\$original_path})</transform-into>
         </append-static>
       </behavior>
     </completion>
@@ -258,14 +218,6 @@
       </behavior>
     </completion>
     
-    <completion string="l">
-      <behavior>
-        <append-static>
-          <transform-into>(${1:\$text}, ${2:\$path}, ${3:\$options = array()})</transform-into>
-        </append-static>
-      </behavior>
-    </completion>
-    
     <completion string="map_month">
       <behavior>
         <append-static>
@@ -290,7 +242,15 @@
       </behavior>
     </completion>
     
-    <completion string="mysqli_is_available">
+    <completion string="page_get_cache">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$status_only = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="page_set_cache">
       <behavior>
         <append-static>
           <transform-into>()</transform-into>
@@ -298,7 +258,23 @@
       </behavior>
     </completion>
     
-    <completion string="mysql_is_available">
+    <completion string="parse_size">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$size})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="referer_uri">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="request_uri">
       <behavior>
         <append-static>
           <transform-into>()</transform-into>
@@ -1231,6 +1207,54 @@
     </completion>
     
     <completion string="db_version">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="mysqli_is_available">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="mysql_is_available">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="pager_get_querystring">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="pager_load_array">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$value}, ${2:\$element}, ${3:\$old_array})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="pager_query">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$query}, ${2:\$limit = 10}, ${3:\$element = 0}, ${4:\$count_query = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="pgsql_is_available">
       <behavior>
         <append-static>
           <transform-into>()</transform-into>
@@ -3909,14 +3933,155 @@
         </append-static>
       </behavior>
     </completion>
-
     
     
-    <!--  Theme API  -->    
+    <!--  Path System  -->
+    <completion string="arg">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$index}${2:, \$path = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="base_path">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="check_url">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:url})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>    
+    
+    <completion string="custom_url_rewrite_inbound">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$result}, ${2:\$path}, ${3:\$path_language})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="custom_url_rewrite_outbound">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$path}, ${2:&amp;\$options}, ${3:\$original_path})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="l">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text}, ${2:\$path}, ${3:\$options = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="path_admin_filter_get_keys">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="path_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:pid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="path_set_alias">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$path = NULL}, ${2:\$alias = NULL}, ${3:\$pid = NULL}, ${4:\$languge = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Poll  -->    
+    <completion string="poll_view_results">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node}, ${2:\$teaser}, ${3:\$page}, ${4:\$block})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Profile  -->    
+    <completion string="profile_categories">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="profile_category_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$account}, ${2:\$category})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="profile_load_profile">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$user})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="profile_save_profile">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$edit}, ${2:&amp;\$user}, ${3:\$category}, ${4:\$register = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="profile_view_field">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$user}, ${2:\$field})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="profile_view_profile">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$user})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    
+    <!--  Theme Layer  -->    
     <completion string="list_themes">
       <behavior>
         <append-static>
           <transform-into>(${1:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="path_to_theme">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
         </append-static>
       </behavior>
     </completion>
