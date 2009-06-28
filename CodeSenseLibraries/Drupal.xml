@@ -210,6 +210,14 @@
       </behavior>
     </completion>
     
+    <completion string="ip_address">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     <completion string="map_month">
       <behavior>
         <append-static>
@@ -323,6 +331,70 @@
     </completion>
     
     <completion string="unicode_requirements">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="valid_email_address">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$mail})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="valid_url">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$url}, ${2:\$absolute = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="variable_del">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="variable_get">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name}, ${2:\$default = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="variable_init">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$conf = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="variable_set">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name}, ${2:\$value})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="watchdog">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type}, ${2:\$message}, ${3:\$variables = array()}, ${4:\$severity = WATCHDOG_NOTICE}, ${5:\$link = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="watchdog_severity_levels">
       <behavior>
         <append-static>
           <transform-into>()</transform-into>
@@ -2776,6 +2848,14 @@
       </behavior>
     </completion>
     
+    <completion string="weight_value">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$form})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Forum system  -->    
     <completion string="forum_get_forums">
@@ -4903,5 +4983,255 @@
         </append-static>
       </behavior>
     </completion>
+        
+        
+    <!--  User API  -->    
+    <completion string="user_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string}, ${2:\$account = NULL}, ${3:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>    
+    
+    <completion string="user_autocomplete">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="user_block_ip_action">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="user_block_user_action">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$object = ''}, ${2:\$context = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="user_build_content">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$account})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="user_build_filter_query">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="user_category_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$uid}, ${2:&amp;\$map}, ${3:\$index})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>   
+      
+    <completion string="user_delete">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$edit}, ${2:\$uid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>   
+      
+    <completion string="user_edit_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$account})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>    
+      
+    <completion string="user_external_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$authname})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>   
+      
+    <completion string="user_fields">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>     
+      
+    <completion string="user_get_authmaps">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$authname = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="user_is_anonymous">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="user_is_blocked">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>      
+      
+    <completion string="user_is_logged_in">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>   
+      
+    <completion string="user_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$array = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+      
+    <completion string="user_load_self">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$arg})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>     
+      
+    <completion string="user_login_default_validators">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>    
+      
+    <completion string="user_logout">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="user_password">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$legth = 10})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="user_pass_rehash">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$password}, ${2:\$timestamp}, ${3:\$login})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>   
+      
+    <completion string="user_preferred_language">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$account}, ${2:\$default = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="user_register_access">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>   
+      
+    <completion string="user_roles">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$membersonly = FALSE}, ${2:\$permission = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="user_save">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$account}, ${2:\$array = array()}, ${3:\$category = 'account'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="user_set_authmaps">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$account}, ${2:\$authmaps})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="user_uid_optional_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$arg})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="user_uid_optional_to_arg">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$arg})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+      
+    <completion string="user_validate_mail">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$mail})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+      
+    <completion string="user_validate_name">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+
+    <completion string="user_view_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$account})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
   </set>
 </codesense>
