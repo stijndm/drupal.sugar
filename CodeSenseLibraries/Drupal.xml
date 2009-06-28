@@ -306,6 +306,30 @@
       </behavior>
     </completion>
     
+    <completion string="truncate_utf8">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string}, ${2:\$len}, ${3:\$wordsafe = FALSE}, ${4:\$dots = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="unicode_check">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="unicode_requirements">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
@@ -4798,10 +4822,26 @@
         
         
     <!--  Trigger API  -->    
-    <completion string="translation_link">
+    <completion string="trigger_access_check">
       <behavior>
         <append-static>
-          <transform-into>(${1:\$type}, ${2:\$node = NULL}, ${3:\$teaser = FALSE})</transform-into>
+          <transform-into>(${1:\$module})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="trigger_actions_delete">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$aid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="trigger_options">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type = 'all'})</transform-into>
         </append-static>
       </behavior>
     </completion>
