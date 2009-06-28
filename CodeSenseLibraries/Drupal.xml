@@ -4072,6 +4072,14 @@
       </behavior>
     </completion>
     
+    <completion string="url">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:path = NULL}, ${2:\$array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
     
     <!--  Poll  -->    
     <completion string="poll_view_results">
@@ -4842,6 +4850,56 @@
       <behavior>
         <append-static>
           <transform-into>(${1:\$type = 'all'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+        
+    <!--  Upload API  -->    
+    <completion string="upload_delete">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>    
+    
+    <completion string="upload_delete_revision">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="upload_file_download">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$filepath})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="upload_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="upload_save">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="upload_space_used">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$uid})</transform-into>
         </append-static>
       </behavior>
     </completion>
