@@ -274,6 +274,38 @@
       </behavior>
     </completion>
     
+    <completion string="throttle_status">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="timer_read">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="timer_start">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="timer_stop">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     
     <!--  Actions API  -->
     <completion string="actions_actions_map">
@@ -4710,6 +4742,66 @@
       <behavior>
         <append-static>
           <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="theme">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$hook}, ${2:\$arg1, \$arg2, \$arg3, […]})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+        
+    <!--  Translation API  -->    
+    <completion string="translation_link">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type}, ${2:\$node = NULL}, ${3:\$teaser = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="translation_node_get_translations">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tnid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="translation_path_get_translations">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$path})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="translation_remove_from_set">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="translation_supported_type">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+        
+    <!--  Trigger API  -->    
+    <completion string="translation_link">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type}, ${2:\$node = NULL}, ${3:\$teaser = FALSE})</transform-into>
         </append-static>
       </behavior>
     </completion>
