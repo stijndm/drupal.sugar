@@ -4472,10 +4472,226 @@
         
         
     <!--  Taxonomy API  -->    
-    <completion string="list_themes">
+    <completion string="taxonomy_autocomplete">
       <behavior>
         <append-static>
-          <transform-into>(${1:\$reset = FALSE})</transform-into>
+          <transform-into>(${1:\$vid}, ${2:\$string = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_check_vocabulary_hierarchy">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$vocabulary}, ${2:\$changed_term})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="taxonomy_del_term">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="taxonomy_del_vocabulary">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$vid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$vid}, ${2:\$value = 0}, ${3:\$help = NULL}, ${4:\$name = 'taxonomy'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="taxonomy_form_all">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$free_tags = 0})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_get_children">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid}, ${2:\$vid = 0}, ${3:\$key = 'tid'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_get_parents">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid}, ${2:\$key = 'tid'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_get_parents_all">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_get_related">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid}, ${2:\$key = 'tid'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_get_synonyms">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_get_synonym_root">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$synonym})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_get_term">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_get_term_by_name">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$name})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_get_tree">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$vid}, ${2:\$parent = 0}, ${3:\$depth = -1}, ${4:\$max_depth = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_get_vocabularies">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_implode_tags">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tags}, ${2:\$vid = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_link">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type}, ${2:\$node = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_node_delete">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_node_delete_revision">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_node_get_terms">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node}, ${2:\$key = 'tid'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_node_get_terms_by_vocabulary">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node}, ${2:\$vid}, ${3:\$key = 'tid'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_save_term">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$form_values})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_save_vocabulary">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$edit})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_select_nodes">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tids = array()}, ${2:\$operator = 'or'}, ${3:\$depth = 0}, ${4:\$pager = TRUE}, ${5:\$order = 'n.sticky DESC, n.created DESC'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_terms_parse_string">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$str_tids})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_term_count_nodes">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid}, ${2:\$type = 0})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="taxonomy_vocabulary_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$vid})</transform-into>
         </append-static>
       </behavior>
     </completion>
