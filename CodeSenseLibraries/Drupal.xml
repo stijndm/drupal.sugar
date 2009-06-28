@@ -478,6 +478,30 @@
     
     
     <!--  Aggregator API  -->    
+    <completion string="_aggregator_has_categories">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_aggregator_items">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$count})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_aggregator_page_list">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$items}, ${2:\$op}, ${3:\$feed_source = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
     <completion string="aggregator_category_load">
       <behavior>
         <append-static>
@@ -568,6 +592,14 @@
     
     
     <!--  Batch API  -->    
+    <completion string="_batch_page">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     <completion string="batch_get">
       <behavior>
         <append-static>
@@ -594,6 +626,30 @@
     
     
     <!--  Block API  -->    
+    <completion string="_block_compare">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$a}, ${2:\$b})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="_block_get_cache_id">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$block})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="_block_rehash">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
     <completion string="block_box_get">
       <behavior>
         <append-static>
@@ -612,6 +668,46 @@
     
     
     <!--  Blogapi API  -->    
+    <completion string="_blogapi_get_node_types">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+            
+    <completion string="_blogapi_get_post">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node}, ${2:\$bodies = TRUE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+            
+    <completion string="_blogapi_space_used">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$uid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+            
+    <completion string="_blogapi_validate_blogid">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$blogid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+            
+    <completion string="_blog_post_exists">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$account})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
     <completion string="blogapi_blogger_delete_post">
       <behavior>
         <append-static>
@@ -758,6 +854,38 @@
     
     
     <!--  Book API  -->    
+    <completion string="_book_link_defaults">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>     
+    
+    <completion string="_book_parent_depth_limit">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$book_link})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>    
+    
+    <completion string="_book_parent_select">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$book_link})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="_book_update_outline">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
     <completion string="book_build_active_trail">
       <behavior>
         <append-static>
@@ -874,6 +1002,70 @@
     
     
     <!--  Color API  -->    
+    <completion string="_color_blend">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$img}, ${2:\$hex1}, ${3:\$hex2}, ${4:\$alpha})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_color_gd">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$img}, ${2:\$hex})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_color_hsl2rgb">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$hsl})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_color_hue2rgb">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$m1}, ${2:\$m2}, ${3:\$h})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_color_pack">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$rgb}, ${2:\$normalize = false})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_color_rgb2hsl">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$rgb})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_color_shift">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$given}, ${2:\$ref1}, ${3:\$ref2}, ${4:\$target})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_color_unpack">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$hex}, ${2:\$normalize = false})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     <completion string="color_get_info">
       <behavior>
         <append-static>
