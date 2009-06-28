@@ -5233,5 +5233,271 @@
         </append-static>
       </behavior>
     </completion>  
+        
+        
+    <!--  XMLRPC API  -->    
+    <completion string="xmlrpc">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$url})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xmlrpc_base64">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$data})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="xmlrpc_base64_get_xml">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$xmlrpc_base64})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="xmlrpc_clear_error">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="xmlrpc_date">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$time})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>   
+    
+    <completion string="xmlrpc_date_get_xml">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$xmlrpc_date})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>   
+    
+    <completion string="xmlrpc_errno">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="xmlrpc_error">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$code = NULL}, ${2:\$message = NULL}, ${3:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>   
+    
+    <completion string="xmlrpc_error_get_xml">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$xmlrpc_error})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="xmlrpc_error_msg">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="xmlrpc_message">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$message})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="xmlrpc_message_cdata">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$parser}, ${2:\$cdata})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="xmlrpc_message_get">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xmlrpc_message_parse">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$xmlrpc_message})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="xmlrpc_message_set">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$value = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="xmlrpc_message_tag_close">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$parser}, ${2:\$tag})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xmlrpc_message_tag_open">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$parser}, ${2:\$tag}, ${3:\$attr})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="xmlrpc_request">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$method}, ${2:\$args})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="xmlrpc_server">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$callbacks})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xmlrpc_server_call">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$xmlrpc_server}, ${2:\$methodname}, ${3:\$args})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="xmlrpc_server_error">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$error}, ${2:\$message = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="xmlrpc_server_get">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="xmlrpc_server_get_capabilities">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="xmlrpc_server_list_methods">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="xmlrpc_server_method_help">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$method})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xmlrpc_server_method_signature">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$methodname})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xmlrpc_server_multicall">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$methodcalls})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xmlrpc_server_output">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$xml})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xmlrpc_server_set">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$xmlrpc_server = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xmlrpc_value">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$data}, ${2:\$type = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xmlrpc_value_calculate_type">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$xmlrpc_value})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xmlrpc_value_get_xml">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$xmlrpc_value})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="xrds_parse">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$xml})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
   </set>
 </codesense>
