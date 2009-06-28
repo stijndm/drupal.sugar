@@ -4413,6 +4413,74 @@
     </completion>
         
     
+    <!--  Tables   -->    
+    <completion string="tablesort_cell">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$cell}, ${2:\$header}, ${3:\$ts}, ${4:\$i})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="tablesort_get_order">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$headers})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="tablesort_get_querystring">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="tablesort_get_sort">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$headers})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="tablesort_header">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$cell}, ${2:\$header}, ${3:\$ts})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="tablesort_init">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$header})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="tablesort_sql">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$header}, ${2:\$before = ''})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+        
+    <!--  Taxonomy API  -->    
+    <completion string="list_themes">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$reset = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+        
     <!--  Theme Layer  -->    
     <completion string="list_themes">
       <behavior>
