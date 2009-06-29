@@ -122,6 +122,14 @@
     </behavior>
     
     <!--  General system functions  -->    
+    <completion string="_element_info">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type}, ${2:\$refresh = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     <completion string="confirm_form">
       <behavior>
         <append-static>
@@ -1084,6 +1092,54 @@
     
     
     <!--  Comment API  -->    
+    <completion string="_comment_delete_thread">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$comment})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+          
+    <completion string="_comment_get_display_setting">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$setting}, ${2:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+          
+    <completion string="_comment_get_modes">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+          
+    <completion string="_comment_get_orders">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+           
+    <completion string="_comment_load">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$cid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+          
+    <completion string="_comment_per_page">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+          
     <completion string="comment_access">
       <behavior>
         <append-static>
@@ -1158,6 +1214,22 @@
     
     
     <!--  Database Layer -->    
+    <completion string="_dblog_format_message">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$dblog})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="_dblog_get_message_types">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
     <completion string="db_add_column">
       <behavior>
         <append-static>
@@ -1576,6 +1648,22 @@
     
     
     <!--  Drupal functions -->    
+    <completion string="_drupal_install_module">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$module})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_drupal_load_stylesheet">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$matches})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     <completion string="drupal_access_denied">
       <behavior>
         <append-static>
@@ -2820,6 +2908,86 @@
     
     
     <!--  Filter systems  --> 
+    <completion string="_filter_autop">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>   
+    
+    <completion string="_filter_html">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text}, ${2:\$format})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>   
+    
+    <completion string="_filter_htmlcorrector">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="_filter_tips">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$format}, ${2:\$long = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="_filter_url">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text}, ${2:\$format})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="_filter_url_parse_full_links">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$match})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="_filter_url_parse_partial_links">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$match})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
+    <completion string="_filter_url_trim">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$text}, ${2:\$length = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="_filter_xss_attributes">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$attr})</transform-into>
+        </append-static>
+      </behavior>
+    </completion> 
+    
+    <completion string="_filter_xss_split">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$m}, ${2:\$store = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>  
+    
     <completion string="check_markup">
       <behavior>
         <append-static>
@@ -2831,7 +2999,7 @@
     <completion string="check_plain">
       <behavior>
         <append-static>
-          <transform-into>(${1:text})</transform-into>
+          <transform-into>(${1:\$text})</transform-into>
         </append-static>
       </behavior>
     </completion>   
@@ -2925,7 +3093,7 @@
     </completion>
     
     
-    <!--  Format system  -->    
+    <!--  Format system  -->  
     <completion string="format_date">
       <behavior>
         <append-static>
@@ -2984,6 +3152,22 @@
     
     
     <!--  Form system  -->    
+    <completion string="_form_button_was_clicked">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+         
+    <completion string="_form_set_class">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$element}, ${2:\$class = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
     <completion string="form_clean_id">
       <behavior>
         <append-static>
@@ -3050,6 +3234,30 @@
     
     
     <!--  Forum system  -->    
+    <completion string="_forum_new">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+           
+    <completion string="_forum_topics_unread">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$term}, ${2:\$uid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="_forum_user_last_visit">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$nid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
     <completion string="forum_get_forums">
       <behavior>
         <append-static>
@@ -3213,7 +3421,143 @@
     </completion>
     
     
-    <!--  Language and locale API  -->      
+    <!--  Language and locale API  -->    
+    <completion string="_locale_export_po">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$language = NULL}, ${2:\$output = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_locale_export_po_generate">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$language = NULL}, ${2:\$strings = array()}, ${3:\$header = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_locale_export_string">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$str})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_locale_get_predefined_list">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_locale_import_append_plural">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$entry}, ${2:\$key})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_locale_import_message">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$message}, ${2:\$file}, ${3:\$lineno = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="_locale_import_one_string">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$op}, ${2:\$value = NULL}, ${3:\$mode = LOCALE_IMPORT_KEEP|LOCALE_IMPORT_OVERWRITE}, ${4:\$lang = NULL}, ${5:\$file = NULL}, ${6:\$group = 'default'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="_locale_import_one_string_db">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$report}, ${2:\$langcode}, ${3:\$source}, ${4:\$translation}, ${5:\$textgroup}, ${6:\$location}, ${7:\$mode = LOCALE_IMPORT_KEEP|LOCALE_IMPORT_OVERWRITE}, ${8:\$plid = NULL}, ${9:\$plural = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_locale_import_parse_arithmetic">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_locale_import_parse_header">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$header})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_locale_import_parse_plural_forms">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$pluralforms}, ${2:\$filename})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_locale_import_parse_quoted">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$string})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="_locale_import_po">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$file}, ${2:\$langcode}, ${3:\$mode = LOCALE_IMPORT_KEEP|LOCALE_IMPORT_OVERWRITE}, ${4:\$group = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+       
+    <completion string="_locale_import_read_po">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$op}, ${2:\$file}, ${3:\$mode = LOCALE_IMPORT_KEEP|LOCALE_IMPORT_OVERWRITE}, ${4:\$lang = NULL}, ${5:\group = 'default'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_locale_import_shorten_comments">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$comment})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_locale_import_tokenize_formula">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$formula})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="_locale_rebuild_js">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$langcode = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
     <completion string="get_t">
       <behavior>
         <append-static>
@@ -3352,6 +3696,78 @@
     
     
     <!--  Menu API  -->    
+    <completion string="_menu_check_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$item}), ${2:\$map}</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_menu_find_router_path">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$link_path})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_menu_link_build">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$item})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_menu_link_move_children">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$item}), ${2:\$existing_item}</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_menu_link_translate">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$item}</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_menu_parent_depth_limit">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$item}</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_menu_set_expanded_menus">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_menu_translate">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$router_item}), ${2:\$map}, ${3:\to_arg = FALSE}</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_menu_tree_cid">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$menu_name}), ${2:\$data}</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
     <completion string="menu_cache_clear">
       <behavior>
         <append-static>
