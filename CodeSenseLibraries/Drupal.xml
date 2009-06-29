@@ -130,6 +130,14 @@
       </behavior>
     </completion>
     
+    <completion string="_mime_header_decode">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$matches})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     <completion string="confirm_form">
       <behavior>
         <append-static>
@@ -4252,6 +4260,30 @@
     
     
     <!--  NodeA API  -->    
+    <completion string="_node_add_access">
+      <behavior>
+        <append-static>
+          <transform-into>()</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_node_index_node">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_node_revision_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node}, ${2:\$op = 'view'})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     <completion string="node_access">
       <behavior>
         <append-static>
@@ -4770,6 +4802,14 @@
     
     
     <!--  Poll  -->    
+    <completion string="_poll_menu_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node}, ${2:\$perm}, ${3:\$inspect_allowvotes})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     <completion string="poll_view_results">
       <behavior>
         <append-static>
@@ -4779,7 +4819,22 @@
     </completion>
     
     
-    <!--  Profile  -->    
+    <!--  Profile  -->   
+    <completion string="_profile_field_types">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$type = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    <completion string="_profile_get_fields">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$category}, ${2:\$register = FALSE})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
     <completion string="profile_categories">
       <behavior>
         <append-static>
@@ -5224,6 +5279,22 @@
         
         
     <!--  Taxonomy API  -->    
+    <completion string="_taxonomy_term_children">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$tid})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+     
+    <completion string="_taxonomy_term_select">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$title}, ${2:\$name}, ${3:\$value}, ${4:\$vocabulary_id}, ${5:\$description}, ${6:\$multiple}, ${7:\$blank}, ${8:\$exclude = array()})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
     <completion string="taxonomy_autocomplete">
       <behavior>
         <append-static>
@@ -5449,7 +5520,55 @@
     </completion>
         
         
-    <!--  Theme Layer  -->    
+    <!--  Theme Layer  -->       
+    <completion string="_theme_build_registry">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$theme}, ${2:\$base_theme}, ${3:\$theme_engine})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_theme_load_offline_registry">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$theme}, ${2:\$base_theme = NULL}, ${3:\$theme_engine = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_theme_load_registry">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$theme}, ${2:\$base_theme = NULL}, ${3:\$theme_engine = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_theme_process_registry">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:&amp;\$cache}, ${2:\$name}, ${3:\$type}, ${4:\$theme}, ${5:\$path})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_theme_save_registry">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$theme}, ${2:\$registry})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+      
+    <completion string="_theme_set_registry">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$registry})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     <completion string="list_themes">
       <behavior>
         <append-static>
@@ -5476,6 +5595,14 @@
         
         
     <!--  Translation API  -->    
+    <completion string="_translation_tab_access">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$node})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     <completion string="translation_link">
       <behavior>
         <append-static>
@@ -5518,6 +5645,22 @@
         
         
     <!--  Trigger API  -->    
+    <completion string="_trigger_get_hook_actions">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$hook}, ${2:\$op}, ${3:\$type = NULL})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
+    <completion string="_trigger_get_hook_aids">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$hook}, ${2:\$op})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+        
     <completion string="trigger_access_check">
       <behavior>
         <append-static>
@@ -5544,6 +5687,14 @@
         
         
     <!--  Upload API  -->    
+    <completion string="_upload_file_limits">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$user})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>    
+     
     <completion string="upload_delete">
       <behavior>
         <append-static>
