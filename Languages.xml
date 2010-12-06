@@ -31,17 +31,17 @@
       <combo>
         <extension casesensitive="false">php</extension>
       	<match-content lines="2">^(&lt;)(\?)(php|=)?
-// $Id</match-content>
+^(\/\/ $Id)?</match-content>
       </combo>
       <combo>
         <extension casesensitive="false">phps</extension>
       	<match-content lines="2">^(&lt;)(\?)(php|=)?
-// $Id</match-content>
+^(\/\/ $Id)?</match-content>
       </combo>
       <combo>
         <extension casesensitive="false">inc</extension>
       	<match-content lines="2">^(&lt;)(\?)(php|=)?
-// $Id</match-content>
+^(\/\/ $Id)?</match-content>
       </combo>
     </detectors>  
   </language> 
