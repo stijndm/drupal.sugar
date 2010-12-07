@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<action-recipes>
+	<snippet id="be.sken.drupal.snippets." category="actions.text.drupal/actions.text.drupal.forms">
+		<title>Textfield</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'textfield',
+	'#title' => t('${2:title}'),
+	'#description' => t('${3:description}'),$0
+);]]></text>
+		<syntax-context>php *</syntax-context>
+		<text-trigger>ftext</text-trigger>
+	</snippet>
+</action-recipes>

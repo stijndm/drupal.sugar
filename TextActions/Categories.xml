@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<action-categories>
+	<category id="actions.text.drupal" show="sub">
+		<title>Drupal</title>
+	</category>
+	<category id="actions.text.drupal.module" show="sub">
+		<title>Module</title>
+	</category>
+	<category id="actions.text.drupal.forms" show="sub">
+		<title>Form elements</title>
+	</category>
+  <category id="drupal.general" show="inline separated"></category>
+</action-categories>
