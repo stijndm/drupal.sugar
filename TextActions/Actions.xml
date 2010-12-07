@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <action-recipes>	
-	<action id="be.sken.drupal.org" category="actions.text.drupal/drupal.general/lookup.1">
+	<action id="be.sken.drupal.org" category="actions.text.drupal/drupal.lookup/lookup.1">
 		<class>Spice</class>
 		<title>Lookup on drupal.org</title>
 		<key-equivalent>command shift d</key-equivalent>
@@ -15,7 +15,7 @@
 		</setup>
 	</action>
 	
-  <action id="be.sken.drupal.api" category="actions.text.drupal/drupal.general/lookup.2">
+  <action id="be.sken.drupal.api" category="actions.text.drupal/drupal.lookup/lookup.2">
   	<class>Spice</class>
   	<title>Lookup on api.drupal.org</title>
   	<key-equivalent>command shift a</key-equivalent>
@@ -29,4 +29,4 @@
   		</arguments>
   	</setup>
   </action>
-</action-recipes> 
+</action-recipes>

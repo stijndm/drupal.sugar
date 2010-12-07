@@ -9,5 +9,11 @@
 	<category id="actions.text.drupal.forms" show="sub">
 		<title>Form elements</title>
 	</category>
-  <category id="drupal.general" show="inline separated"></category>
+	<category id="actions.text.drupal.menu" show="sub">
+		<title>Form elements</title>
+	</category>
+	<category id="actions.text.drupal.theme" show="sub">
+		<title>Form elements</title>
+	</category>
+  <category id="drupal.lookup" show="inline separated"></category>
 </action-categories>
