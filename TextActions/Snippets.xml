@@ -1,13 +1,435 @@
 <?xml version="1.0"?>
 <action-recipes>
-	<snippet id="be.sken.drupal.snippets." category="actions.text.drupal/actions.text.drupal.forms">
+
+  <!-- Form elements, visible in menu -->
+
+	<snippet id="be.sken.drupal.snippets.form.blank" category="actions.text.drupal/actions.text.drupal.forms/element.blank">
+		<title>Blank form item</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => '${2:type}',
+	'#title' => t('${3:title}'),
+	'#description' => t('${4:description}'),
+	'#default_value' => ${5:default},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>fitem</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.checkbox" category="actions.text.drupal/actions.text.drupal.forms/element.checkbox">
+		<title>Checkbox</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'checkbox',
+	'#title' => t('${2:title}'),
+	'#default_value' => ${3:default},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>checkbox</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.checkboxes" category="actions.text.drupal/actions.text.drupal.forms/element.checkboxes">
+		<title>Checkboxes</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'checkboxes',
+	'#title' => t('${2:title}'),
+	'#description' => t('${3:description}'),
+	'#options' => array(${4:options}),
+	'#default_value' => array(${5:default}),$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>checkboxes</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.date" category="actions.text.drupal/actions.text.drupal.forms/element.date">
+		<title>Date</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'date',
+	'#title' => t('${2:title}'),
+	'#description' => t('${3:description}'),
+	'#default_value' => ${4:default},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>date</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.fieldset" category="actions.text.drupal/actions.text.drupal.forms/element.fieldset">
+		<title>Fieldset</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'fieldset',
+	'#title' => t('${2:title}'),
+	'#collapsible' => t('${3:TRUE}'),
+	'#collapsed' => t('${4:FALSE}'),$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>fieldset</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.file" category="actions.text.drupal/actions.text.drupal.forms/element.file">
+		<title>File</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'file',
+	'#title' => t('${2:title}'),
+	'#description' => t('${3:description}'),$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>file</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.hidden" category="actions.text.drupal/actions.text.drupal.forms/element.hidden">
+		<title>Hidden</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'hidden',
+	'#value' => ${2:value},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>hidden</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.item" category="actions.text.drupal/actions.text.drupal.forms/element.item">
+		<title>Item</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'item',
+	'#title' => t('${2:title}'),
+	'#value' => ${3:value},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>item</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.markup" category="actions.text.drupal/actions.text.drupal.forms/element.markup">
+		<title>Markup</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#value' => ${2:value},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>markup</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.password" category="actions.text.drupal/actions.text.drupal.forms/element.password">
+		<title>Password</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'password',
+	'#title' => t('${2:title}'),
+	'#maxlength' => ${3:64},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>password</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.password_confirm" category="actions.text.drupal/actions.text.drupal.forms/element.password_confirm">
+		<title>Password confirm</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'password_confirm',
+	'#title' => t('${2:title}'),$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>password_confirm</text-trigger>
+	</snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.radio" category="actions.text.drupal/actions.text.drupal.forms/element.radio">
+		<title>Radio</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'radio',
+	'#title' => t('${2:title}'),
+	'#default_value' => ${3:default},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>radio</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.radios" category="actions.text.drupal/actions.text.drupal.forms/element.radios">
+		<title>Radios</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'radios',
+	'#title' => t('${2:title}'),
+	'#description' => t('${3:description}'),
+	'#options' => array(${4:options}),
+	'#default_value' => ${5:default},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>radios</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.select" category="actions.text.drupal/actions.text.drupal.forms/element.select">
+		<title>Select</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'select',
+	'#title' => t('${2:title}'),
+	'#description' => t('${3:description}'),
+	'#options' => array(${4:options}),
+	'#default_value' => ${5:default},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>select</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.submit" category="actions.text.drupal/actions.text.drupal.forms/element.submit">
+		<title>Submit</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'submit',
+	'#value' => t('${2:value}'),$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>submit</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.textarea" category="actions.text.drupal/actions.text.drupal.forms/element.textarea">
+		<title>Textarea</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'textarea',
+	'#title' => t('${2:title}'),
+	'#description' => t('${3:description}'),
+	'#default_value' => ${4:default},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>textarea</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.textfield" category="actions.text.drupal/actions.text.drupal.forms/element.textfield">
 		<title>Textfield</title>
 		<text><![CDATA[\$form['${1:key}'] = array(
 	'#type' => 'textfield',
 	'#title' => t('${2:title}'),
-	'#description' => t('${3:description}'),$0
+	'#description' => t('${3:description}'),
+	'#default_value' => ${4:default},$0
 );]]></text>
-		<syntax-context>php *</syntax-context>
-		<text-trigger>ftext</text-trigger>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>textfield</text-trigger>
 	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.value" category="actions.text.drupal/actions.text.drupal.forms/element.value">
+		<title>Value</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'value',
+	'#value' => ${2:value},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>value</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.weight" category="actions.text.drupal/actions.text.drupal.forms/element.weight">
+		<title>Weight</title>
+		<text><![CDATA[\$form['${1:key}'] = array(
+	'#type' => 'weight',
+	'#title' => t('${2:title}'),
+	'#description' => t('${3:description}'),
+	'#delta' => t('${4:10}'),
+	'#default_value' => ${5:default},$0
+);]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>weight</text-trigger>
+	</snippet>
+
+
+	<!-- Drupal properties, hidden from menu -->
+
+	<snippet id="be.sken.drupal.snippets.form.access" category="hidden">
+		<text><![CDATA[\'#access' => ${1:TRUE},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#access</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.action" category="hidden">
+		<text><![CDATA[\'#action' => ${1:url()},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#action</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.after_build" category="hidden">
+		<text><![CDATA[\'#after_build' => ${1:array()},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#after_build</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.ahah" category="hidden">
+		<text><![CDATA[\'#ahah' => array(
+  'path' => '{1:path/js}',
+  'wrapper' => '{2:wrapper}',
+  'method' => '{3:replace|after|append|before|prepend}',
+  'effect' => '{4:none|fade|slide}',
+  {5:'keypress' => {6:TRUE},}
+  {7:'progress' => {8:array()},}
+),$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#ahah</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.attributes" category="hidden">
+		<text><![CDATA[\'#attributes' => ${1:array('class' => 'my-class')},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#attributes</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.autocomplete_path" category="hidden">
+		<text><![CDATA[\'#autocomplete_path' => ${1:'path'},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#autocomplete_path</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.collapsed" category="hidden">
+		<text><![CDATA[\'#collapsed' => ${1:TRUE},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#collapsed</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.collapsible" category="hidden">
+		<text><![CDATA[\'#collapsible' => ${1:TRUE},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#collapsible</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.cols" category="hidden">
+		<text><![CDATA[\'#cols' => ${1:60},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#cols</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.default_value" category="hidden">
+		<text><![CDATA[\'#default_value' => ${1:''},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#default_value</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.delta" category="hidden">
+		<text><![CDATA[\'#delta' => ${1:10},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#delta</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.description" category="hidden">
+		<text><![CDATA[\'#description' => ${1:t('${2}')},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#description</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.disabled" category="hidden">
+		<text><![CDATA[\'#disabled' => ${1:TRUE},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#disabled</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.element_validate" category="hidden">
+		<text><![CDATA[\'#element_validate' => ${1},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#element_validate</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.maxlength" category="hidden">
+		<text><![CDATA[\'#maxlength' => ${1:128},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#maxlentgh</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.multiple" category="hidden">
+		<text><![CDATA[\'#multiple' => ${1:TRUE},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#multiple</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.options" category="hidden">
+		<text><![CDATA[\'#options' => ${1:array()},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#options</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.post_render" category="hidden">
+		<text><![CDATA[\'#post_render' => ${1:array()},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#post_render</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.prefix" category="hidden">
+		<text><![CDATA[\'#prefix' => '${1}',$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#prefix</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.pre_render" category="hidden">
+		<text><![CDATA[\'#pre_render' => ${1:array()},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#pre_render</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.process" category="hidden">
+		<text><![CDATA[\'#process' => ${1:array()},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#process</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.redirect" category="hidden">
+		<text><![CDATA[\'#processed' => '${1}',$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#redirect</text-trigger>
+	</snippet>
+
+	<snippet id="be.sken.drupal.snippets.form.required" category="hidden">
+		<text><![CDATA[\'#required' => ${1:TRUE},$0]]></text>
+		<syntax-context>drupal.php, drupal.php *</syntax-context>
+		<text-trigger>#required</text-trigger>
+	</snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.rows" category="hidden">
+  	<text><![CDATA[\'#rows' => ${1:5},$0]]></text>
+  	<syntax-context>drupal.php, drupal.php *</syntax-context>
+  	<text-trigger>#rows</text-trigger>
+  </snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.size" category="hidden">
+  	<text><![CDATA[\'#size' => ${1:30},$0]]></text>
+  	<syntax-context>drupal.php, drupal.php *</syntax-context>
+  	<text-trigger>#size</text-trigger>
+  </snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.submit" category="hidden">
+  	<text><![CDATA[\'#submit' => ${1:array()},$0]]></text>
+  	<syntax-context>drupal.php, drupal.php *</syntax-context>
+  	<text-trigger>#submit</text-trigger>
+  </snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.suffix" category="hidden">
+  	<text><![CDATA[\'#suffix' => '${1}',$0]]></text>
+  	<syntax-context>drupal.php, drupal.php *</syntax-context>
+  	<text-trigger>#suffix</text-trigger>
+  </snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.theme" category="hidden">
+  	<text><![CDATA[\'#theme' => '${1}',$0]]></text>
+  	<syntax-context>drupal.php, drupal.php *</syntax-context>
+  	<text-trigger>#theme</text-trigger>
+  </snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.title" category="hidden">
+  	<text><![CDATA[\'#title' => t('${1}'),$0]]></text>
+  	<syntax-context>drupal.php, drupal.php *</syntax-context>
+  	<text-trigger>#title</text-trigger>
+  </snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.tree" category="hidden">
+  	<text><![CDATA[\'#tree' => ${1:TRUE},$0]]></text>
+  	<syntax-context>drupal.php, drupal.php *</syntax-context>
+  	<text-trigger>#tree</text-trigger>
+  </snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.type" category="hidden">
+  <text><![CDATA[\'#type' => '${1}',$0]]></text>
+  	<syntax-context>drupal.php, drupal.php *</syntax-context>
+  	<text-trigger>#type</text-trigger>
+  </snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.validate" category="hidden">
+  	<text><![CDATA[\'#validate' => ${1:array()},$0]]></text>
+  	<syntax-context>drupal.php, drupal.php *</syntax-context>
+  	<text-trigger>#validate</text-trigger>
+  </snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.value" category="hidden">
+  	<text><![CDATA[\'#value' => '${1}',$0]]></text>
+  	<syntax-context>drupal.php, drupal.php *</syntax-context>
+  	<text-trigger>#value</text-trigger>
+  </snippet>
+
+  <snippet id="be.sken.drupal.snippets.form.weight" category="hidden">
+  	<text><![CDATA[\'#weight' => ${1:5},$0]]></text>
+  	<syntax-context>drupal.php, drupal.php *</syntax-context>
+  	<text-trigger>#weight</text-trigger>
+  </snippet>
 </action-recipes>
