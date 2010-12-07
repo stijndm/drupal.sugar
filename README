@@ -54,7 +54,7 @@ Form item properties also have custom triggers, but these are hidden from the me
 You can quickly lookup code in you default browser with the following shortcuts:
 
 1. **command shift d** will search for the selected text on drupal.org
-2. **command shift a*** will serach for the selected text on api.drupal.org
+2. **command shift a** will serach for the selected text on api.drupal.org
 
 If no text is selected you will go to each respetive homepage.
 
