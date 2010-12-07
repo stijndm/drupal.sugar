@@ -6,7 +6,24 @@ var TextRecipe = require('text_recipe').TextRecipe;
 
 // exports.main is your primary function
 exports.main = function(site) {
-  system.log(site);
-  system.print(textContext);
-  system.print(textContext.getFirstSelection().value());
+  var url = 'http://drupal.org';
+  var value = textContext.getFirstSelection().string();
+  
+  //search drupal.org
+  if (site == "d" && value != '') {
+    url = "http://drupal.org/search/apachesolr_search/" + escape(value);
+  }
+  
+  if (site == "a") {
+    if (value) {
+      url = "http://api.drupal.org/api/function/" + escape(value);
+    }
+    else {
+      url = "http://api.drupal.org";
+    }
+  }
+  
+  system.log("[Drupal.sugar] Open url: " + url);
+  NSWorkspace.sharedWorkspace.openURL(NSURL.URLWithString(url));
+  return true;
 } 
