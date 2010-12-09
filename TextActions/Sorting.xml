@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<action-sort-instructions>
+	<sort-template>
+		<selector>*</selector>
+		<selector>actions.text.drupal</selector>
+		<selector>actions.text.drupal.module</selector>
+		<selector>actions.text.drupal.forms</selector>
+	</sort-template>
+</action-sort-instructions>
