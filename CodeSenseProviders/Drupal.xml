@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <codesense>
-	<provider>
+  <!-- Functions -->
+  <provider>
     <selector>container.block.embedded.source.php:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.function > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.method > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), container.block > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), literal.collection.dictionary.array</selector>
-		
-		<completions>be.sken.identifier.variable.global</completions>
-		<completions>be.sken.identifier.variable.content</completions>
-		<completions>be.sken.identifier.function</completions>
-		<complete-match>[\?\$a-zA-Z0-9-_\>]+</complete-match>
-	</provider>
-  
+
+    <completions>be.sken.identifier.function</completions>
+    <complete-match>[\?a-z0-9-_\>]+</complete-match>
+  </provider>
+
+  <!-- Variables -->
+  <provider>
+    <selector>container.block.embedded.source.php:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.function > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.method > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), container.block > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), literal.collection.dictionary.array</selector>
+
+    <completions>be.sken.identifier.variable.global</completions>
+    <completions>be.sken.identifier.variable.content</completions>
+    <complete-match>[\?\$a-zA-Z0-9-_\>]+</complete-match>
+  </provider>
+
   <!-- Object variables -->
-	<provider>
-		<selector>identifier.variable.local:capture(name) + *, identifier.variable.local:capture(name) + * + *</selector>
-		<completions>be.sken.identifier.variable.values.${name}</completions>
-		<complete-match capture="2">(->)([a-zA-Z0-9-_]*)</complete-match>
-		<require-suffix>(;|'|"|\)|\]|\[|:|.|\s|}|^)</require-suffix>
-	</provider>  
+  <provider>
+    <selector>identifier.variable.local:capture(name) + *, identifier.variable.local:capture(name) + * + *</selector>
+    <completions>be.sken.identifier.variable.values.${name}</completions>
+    <complete-match capture="2">(->)([a-zA-Z0-9-_]*)</complete-match>
+    <require-suffix>(;|'|"|\)|\]|\[|:|.|\s|}|^)</require-suffix>
+  </provider>
 </codesense>
