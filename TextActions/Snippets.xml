@@ -1,5 +1,19 @@
 <?xml version="1.0"?>
 <action-recipes>
+  <!-- Module related snippets -->
+  
+	<snippet id="be.sken.drupal.snippets.module.info" category="actions.text.drupal/actions.text.drupal.module/module.info">
+		<title>Module info</title>
+		<text><![CDATA[\; \$Id \$
+name = ${1:name}
+description = ${2:description}
+package = ${3:other}
+version = ${4:VERSION}
+${5:dependencies[] = ${7:module}}
+core = ${8:6.x}${0}]]></text>
+		<text-trigger>minfo</text-trigger>
+	</snippet>
+	
 
   <!-- Form elements, visible in menu -->
 
