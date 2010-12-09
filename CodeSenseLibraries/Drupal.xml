@@ -3080,6 +3080,14 @@
       </behavior>
     </completion>
     
+    <completion string="form_get_errors">
+      <behavior>
+        <append-static>
+          <transform-into>()${0}</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
     <completion string="form_options_flatten">
       <behavior>
         <append-static>
@@ -3116,6 +3124,14 @@
       <behavior>
         <append-static>
           <transform-into>(${1:\$form_item}, ${2:\$value}, ${3:&amp;\$form_state})</transform-into>
+        </append-static>
+      </behavior>
+    </completion>
+    
+    <completion string="system_settings_form">
+      <behavior>
+        <append-static>
+          <transform-into>(${1:\$form})</transform-into>
         </append-static>
       </behavior>
     </completion>
