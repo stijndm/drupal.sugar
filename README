@@ -48,6 +48,8 @@ Form item properties also have custom triggers, but these are hidden from the me
     #value + TAB will expand to '#value' => '',
     #submit + TAB will expand to '#submit' => array(),
     
+    fvalue + TAB will expand to $form['key']['#value'] = TRUE;
+    fsubmit + TAB will expand to $form['#submit'] => array();
 
 ### Lookup ###
 
@@ -65,4 +67,9 @@ Drupal.sugar is written by Stijn De Meyere.
 He is a freelance Drupal dev, who loves working with nice tools on the mac.
 
 twitter.com/stijndm
-sken.be
+villaviscom.be
+
+
+## Acknowledgments ##
+
+Ian Beck for the quick support
