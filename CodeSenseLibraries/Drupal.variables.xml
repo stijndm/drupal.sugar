@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense version="1.0">
+  <!-- Drupal global variables -->
+  <set name="be.sken.identifier.variable.global">
+    <completion string="$active_db" />
+    <completion string="$base_path" />
+    <completion string="$base_root" />
+    <completion string="$base_theme_info" />
+    <completion string="$base_url" />
+    <completion string="$channel" />
+    <completion string="$conf" />
+    <completion string="$cookie_domain" />
+    <completion string="$custom_theme" />
+    <completion string="$db_prefix" />
+    <completion string="$db_type" />
+    <completion string="$db_url" />
+    <completion string="$element" />
+    <completion string="$forum_topic_list_header" />
+    <completion string="$id" />
+    <completion string="$image" />
+    <completion string="$installed_profile" />
+    <completion string="$install_locale" />
+    <completion string="$item" />
+    <completion string="$items" />
+    <completion string="$language" />
+    <completion string="$last_result" />
+    <completion string="$menu_admin" />
+    <completion string="$multibyte" />
+    <completion string="$nid" />
+    <completion string="$pager_page_array" />
+    <completion string="$pager_total" />
+    <completion string="$pager_total_items" />
+    <completion string="$profile" />
+    <completion string="$queries" />
+    <completion string="$recent_activity" />
+    <completion string="$tag" />
+    <completion string="$theme" />
+    <completion string="$theme_engine" />
+    <completion string="$theme_info" />
+    <completion string="$theme_key" />
+    <completion string="$theme_path" />
+    <completion string="$timers" />
+    <completion string="$update_free_access" />
+    <completion string="$update_mode" />
+    <completion string="$user" />
+    <completion string="$xrds_current_service" />
+    <completion string="$xrds_open_elements" />
+    <completion string="$xrds_services" />    
+  </set>
+  
+  <!-- Drupal content variables -->
+  <set name="be.sken.identifier.variable.content">
+    <!--  Objects  -->
+    <completion string="$node" />    
+    <completion string="$taxonomy" />    
+    <completion string="$block" />
+    <completion string="$comment" /> <!--  This is also a boolean in the context of node.tpl.php  -->
+    <!--  Arrays  -->
+    <completion string="$primary_links" />    
+    <completion string="$secondary_links" />    
+    <!--  Variables  -->
+    <completion string="$author" />  
+    <completion string="$block_id" /> 
+    <completion string="$block_zebra" />   
+    <completion string="$breadcrumb" />      
+    <completion string="$body_classes" />      
+    <completion string="$closure" />   
+    <completion string="$comment_count" />      
+    <completion string="$content" />          
+    <completion string="$created" />          
+    <completion string="$date" />   
+    <completion string="$directory" /> 
+    <completion string="$feed_icons" /> 
+    <completion string="$footer" />
+    <completion string="$footer_message" /> 
+    <completion string="$front_page" />      
+    <completion string="$head" />    
+    <completion string="$head_title" />
+    <completion string="$help" /> 
+    <completion string="$id" /> 
+    <completion string="$links" />  
+    <completion string="$logo" />   
+    <completion string="$messages" /> 
+    <completion string="$mission" /> 
+    <completion string="$name" />
+    <completion string="$new" />
+    <completion string="$node_url" />
+    <completion string="$picture" /> 
+    <completion string="$scripts" />   
+    <completion string="$search_box" /> 
+    <completion string="$signature" />  
+    <completion string="$site_name" />  
+    <completion string="$site_slogan" /> 
+    <completion string="$status" /> 
+    <completion string="$styles" /> 
+    <completion string="$submitted" />   
+    <completion string="$tabs" />     
+    <completion string="$terms" />    
+    <completion string="$title" />    
+    <completion string="$type" />    
+    <completion string="$uid" />  
+    <completion string="$zebra" />    
+    <!--  Booleans/Flags  -->
+    <completion string="$logged_in" />
+    <completion string="$is_admin" /> 
+    <completion string="$is_front" /> 
+    <completion string="$page" />  
+    <completion string="$promote" /> 
+    <completion string="$readmore" /> 
+    <completion string="$sticky" /> 
+    <completion string="$teaser" /> 
+  </set>
+</codesense>
