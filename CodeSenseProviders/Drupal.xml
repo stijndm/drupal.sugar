@@ -8,6 +8,14 @@
     <complete-match>[\?a-z0-9-_\>]+</complete-match>
   </provider>
 
+  <!-- Constants -->
+  <provider>
+    <selector>container.block.embedded.source.php:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.function > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.method > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), container.block > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), literal.collection.dictionary.array</selector>
+
+    <completions>be.sken.identifier.constants</completions>
+    <complete-match>[\?A-Z-_\>]+</complete-match>
+  </provider>
+
   <!-- Variables -->
   <provider>
     <selector>container.block.embedded.source.php:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.function > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.method > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), container.block > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), literal.collection.dictionary.array</selector>

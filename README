@@ -9,6 +9,7 @@ This sugar is under (semi-)active development. Currently supported are:
 - recognition of drupal files as php (module, install, profile)
 - autocomplete of most API functions
 - autocomplete of most common Drupal variables
+- autocomplete for Drupal constants
 - lookup
 - form api snippets
 
