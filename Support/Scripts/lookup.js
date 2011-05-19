@@ -16,10 +16,10 @@ exports.main = function(site) {
   
   if (site == "a") {
     if (value) {
-      url = "http://api.drupal.org/api/function/" + escape(value);
+      url = "http://api.drupal.org/api/search/6/" + escape(value);
     }
     else {
-      url = "http://api.drupal.org";
+      url = "http://api.drupal.org/api/drupal/6";
     }
   }
   
