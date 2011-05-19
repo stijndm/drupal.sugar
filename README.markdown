@@ -2,8 +2,9 @@
 
 ## About ##
 
-The Drupal.sugar is a plugin for the Mac text editor Espresso (macrabbit.com).
-It provides code sense and snippets for the Drupal API making a Drupal dev's life that much easier.
+The Drupal.sugar is a plugin for the Mac text editor Espresso (macrabbit.com).  
+It provides code sense and snippets for the Drupal API making a Drupal dev's life that much easier.  
+(*Beware:* Currently only Drupal 6 is supported.)
 
 This sugar is under (semi-)active development. Currently supported are:
 - recognition of drupal files as php (module, install, profile)
@@ -22,9 +23,9 @@ This sugar is under (semi-)active development. Currently supported are:
 
 Espresso will launch and install the sugar.
 
-If you want the latest changes you can eiter
-1. Download the source (make sure everything is packaged in a folder called Drupal.sugar and double click the package).
-2. Clone the project to the folder ~Library/Application Support/Espresso/Sugars/Drupal.sugar This way you can pull in the latest changes.
+If you want the latest changes you can eiter  
+1. Download the source (make sure everything is packaged in a folder called Drupal.sugar and double click the package).  
+2. Clone the project to the folder ~/Library/Application Support/Espresso/Sugars/Drupal.sugar This way you can pull in the latest changes.
 
 
 ## Usage ##
@@ -59,7 +60,7 @@ You can quickly lookup code in you default browser with the following shortcuts:
 1. **command shift d** will search for the selected text on drupal.org
 2. **command shift a** will serach for the selected text on api.drupal.org
 
-If no text is selected you will go to each respetive homepage.
+If no text is selected you will go to each respective homepage.
 
 
 ## About the author ##
@@ -67,7 +68,7 @@ If no text is selected you will go to each respetive homepage.
 Drupal.sugar is written by Stijn De Meyere.
 He is a freelance Drupal dev, who loves working with nice tools on the mac.
 
-twitter.com/stijndm
+twitter.com/stijndm  
 villaviscom.be
 
 
