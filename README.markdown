@@ -14,6 +14,13 @@ This sugar is under (semi-)active development. Currently supported are:
 - lookup
 - form api snippets
 
+## The version numebers
+
+There are currently two branches:
+- 1.x-6.1.x
+- 2.x-6.1.x
+
+The first number is the Espresso version (1.x or 2.x). After the dash is the Drupal version followed by the plugin version.
 
 ## Installation ##
 
