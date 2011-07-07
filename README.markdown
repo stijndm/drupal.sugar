@@ -7,6 +7,7 @@ It provides code sense and snippets for the Drupal API making a Drupal dev's lif
 (*Beware:* Currently only Drupal 6 is supported.)
 
 This sugar is under (semi-)active development. Currently supported are:
+
 - recognition of drupal files as php (module, install, profile)
 - autocomplete of most API functions
 - autocomplete of most common Drupal variables
@@ -14,9 +15,10 @@ This sugar is under (semi-)active development. Currently supported are:
 - lookup
 - form api snippets
 
-## The version numebers
+## The version numbers ##
 
 There are currently two branches:
+
 - 1.x-6.1.x
 - 2.x-6.1.x
 
@@ -31,6 +33,7 @@ The first number is the Espresso version (1.x or 2.x). After the dash is the Dru
 Espresso will launch and install the sugar.
 
 If you want the latest changes you can eiter  
+
 1. Download the source (make sure everything is packaged in a folder called Drupal.sugar and double click the package).  
 2. Clone the project to the folder ~/Library/Application Support/Espresso/Sugars/Drupal.sugar This way you can pull in the latest changes.
 
