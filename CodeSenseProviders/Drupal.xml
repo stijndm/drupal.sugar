@@ -2,7 +2,7 @@
 <codesense>
   <!-- Functions -->
   <provider>
-    <selector>container.block.embedded.source.php:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.function > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.method > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), container.block > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), literal.collection.dictionary.array</selector>
+    <selector>language-root.php, language-root.php *:not(string, string *, comment)</selector>
 
     <completions>be.sken.identifier.function</completions>
     <complete-match>[\?a-z0-9-_\>]+</complete-match>
@@ -10,7 +10,7 @@
 
   <!-- Constants -->
   <provider>
-    <selector>container.block.embedded.source.php:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.function > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.method > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), container.block > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), literal.collection.dictionary.array</selector>
+    <selector>language-root.php, language-root.php *:not(string, string *, comment)</selector>
 
     <completions>be.sken.identifier.constants</completions>
     <complete-match>[\?A-Z-_\>]+</complete-match>
@@ -18,7 +18,7 @@
 
   <!-- Variables -->
   <provider>
-    <selector>container.block.embedded.source.php:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.function > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), identifier.method > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), container.block > *:not(literal.string, literal.string > *, quote, comment, capturing.group, object, object *, object + *), literal.collection.dictionary.array</selector>
+    <selector>language-root.php, language-root.php *:not(string, string *, comment)</selector>
 
     <completions>be.sken.identifier.variable.global</completions>
     <completions>be.sken.identifier.variable.content</completions>
@@ -27,7 +27,7 @@
 
   <!-- Object variables -->
   <provider>
-    <selector>identifier.variable.local:capture(name) + *, identifier.variable.local:capture(name) + * + *</selector>
+    <selector>variable:capture(name) + *, variable:capture(name) + * + *</selector>
     <completions>be.sken.identifier.variable.values.${name}</completions>
     <complete-match capture="2">(->)([a-zA-Z0-9-_]*)</complete-match>
     <require-suffix>(;|'|"|\)|\]|\[|:|.|\s|}|^)</require-suffix>
